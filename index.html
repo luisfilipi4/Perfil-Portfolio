@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal</title> 
+    <style>
+        @font-face {
+            font-family: 'titulo';
+            src: url(../Mercado/Lobster-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'menu';
+            src: url(../Mercado/Agbalumo-Regular.ttf);
+        }
+
+      * {
+        margin: 0;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      h1 {
+        background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 1px 1px 1px black;
+        margin-top: 0px;
+        font-family: 'titulo', Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
+        color: whitesmoke;
+        text-align: center;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-shadow: 1px 1px 1px black;
+        padding-bottom: 60px;
+        line-height: 2em;
+      }
+      
+      .link0 {
+        color: black;
+        background-color: rgba(128, 128, 128, 0.637);
+      }
+
+      .link0:hover {
+        color: white;
+      }
+
+      .branca {
+        color: white;
+      }
+
+      .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+            list-style-type: none;
+            margin-bottom: 2px;
+            padding: 10px 0px;
+        }
+
+         .link1, .link2, .link3, .link4, .link5, .link6 {
+            display: inline-block;
+            position: relative;
+            font-family: 'menu', serif;
+            background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
+            color: black;
+            background-size: 400% 100%;
+            animation: degrade 10s linear infinite alternate;
+            border-radius: 0px 0px 1px 1px;
+            text-decoration: none;
+            right: 15px;
+            margin: 5px 30px;
+            top: 0px;
+            padding: 10px;
+        }
+
+        .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
+            background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0.685), black);
+            color: white;
+            border: solid white 1px;
+            text-shadow: 1px 1px 1px black;
+            border-radius: 10px 10px 10px 10px;
+            background-size: 400% 100%;
+            animation: degrade 2s linear infinite alternate;
+        }
+
+        @keyframes degrade {
+            0%{
+                background-position: 0%;
+            }
+
+            100%{
+                background-position: 400%;
+            }
+        }
+
+        .efeito-primeiro {
+          visibility: hidden;
+        }
+        .efeito-primeiro1 {
+          visibility: hidden;
+        }
+        .efeito-segundo {
+          visibility: hidden;
+        }
+        .efeito-segundo2 {
+          visibility: hidden;
+        }
+        .efeito-terceiro {
+          visibility: hidden;
+        }
+        .efeito-terceiro3 {
+          visibility: hidden;
+        }  
+        .efeito-quarto {
+          visibility: hidden;
+        }
+        .efeito-quinto {
+          visibility: hidden;
+        }
+        .efeito-menu1 {
+          visibility: hidden;
+        }
+        .efeito-menu2 {
+          visibility: hidden;
+        }
+   
+        .site {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        iframe {
+          margin-top: 10px;
+          border: 10px solid rgba(0, 0, 0, 0.459);
+        }
+
+        .h2-code {
+          position: relative;
+          width: 99.9%;
+          font-size: 2.5em;
+          top: 180px;
+          color: white;
+          font-family: 'titulo';
+          font-size: 30px;
+          text-align: center;
+          text-shadow: 1px 1px 1px black;
+          border: solid rgb(0, 0, 0) 1px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        .h2-code:hover {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black); 
+          background-size: 400% 100%;
+          animation: degrade 10s linear infinite alternate;   
+        }
+
+        @keyframes degrade {
+        0%{
+            background-position: 0%;
+        }
+
+        100%{
+            background-position: 400%;
+        }
+        }
+
+        .HTML {
+          position: relative;
+          text-align: center;
+          bottom: 50px;
+          color: white;
+          letter-spacing: 20px;
+          font-family: 'menu', Arial, Helvetica, sans-serif;
+        }
+        .CSS {
+          position: relative;
+          text-align: center;
+          bottom: 50px;
+          color: white;
+          letter-spacing: 20px;
+          font-family: 'menu', Arial, Helvetica, sans-serif;
+        }
+        .JS {
+          position: relative;
+          text-align: center;
+          bottom: 50px;
+          color: white;
+          letter-spacing: 20px;
+          font-family: 'menu', Arial, Helvetica, sans-serif;
+        }
+
+        .pic-pai {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .img-code {
+          position: relative;
+          margin-top: 320px;
+          margin-bottom: 80px;
+          width: 800px;
+          height: 660px;
+          border: solid 10px rgba(0, 0, 0, 0.459);
+          background-image: url('./CSS.png');
+          background-position: 100% 0%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 10s;
+          cursor: pointer;
+        }
+
+        .img-code:hover {
+          background-position: 100% 100%;
+        }
+
+        .img-code2 {
+          position: relative;
+          margin-top: 320px;
+          margin-bottom: 80px;
+          width: 800px;
+          height: 660px;
+          border: solid 10px rgba(0, 0, 0, 0.459);
+          background-image: url('./HTML.png');
+          background-position: 100% 0%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 1s;
+          cursor: pointer;
+        }
+
+        .img-code2:hover {
+          background-position: 100% 100%;
+        }
+        
+        .pic-pai2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        .img-code3 {
+          position: relative;
+          margin-top: 320px;
+          margin-bottom: 80px;
+          width: 1310px;
+          height: 660px;
+          border: solid 10px rgba(0, 0, 0, 0.459);
+          background-image: url('./SCRIPT.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 1s;
+          cursor: pointer;
+        }
+
+        .img-code3:hover {
+          background-position: 100% 100%;
+        }
+
+        .framejs {
+          display: none;
+        }
+
+        @media screen and (max-width: 1764px) {
+        .pic-pai, .pic-pai2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        }
+
+        @media screen and (min-width: 850px) {
+          .img-code3 {
+            width: 660px
+          }
+        }
+
+        @media screen and (max-width: 849px) and (min-width: 650px) {
+          .img-code {
+            width: 600px;
+          }
+          .img-code2 {
+            width: 600px;
+          }
+        }
+
+        @media screen and (max-width: 840px) and (min-width: 650px) {
+          iframe {
+            width: 600px;
+          }
+        }
+
+        @media screen and (max-width: 849px) and (min-width: 731px) {
+          .img-code3 {
+            width: 600px;
+          }
+        }
+
+        @media screen and (max-width: 730px) {
+          .img-code3 {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: 649px) {
+          .img-code {
+            display: none;
+          } 
+          .img-code2 {
+            display: none;
+          }
+          .h2-code {
+            display: none;
+          }
+          iframe {
+            width: 400px;
+          }
+        }
+
+        @media screen and (min-width: 1023px) {
+
+        .link1, .link2, .link3, .link4, .link5, .link6 {
+          font-size: 15px;
+        }
+
+        .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
+          font-size: 25px;
+          transition: .1s;
+         }
+        }
+
+        @media screen and (max-width: 1022px) {
+
+          .link1, .link2, .link3, .link4, .link5, .link6 {
+            font-size: 15px;
+          }
+
+          .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
+            font-size: 15px;
+          }
+        }
+
+        @media screen and (min-width: 1280px) {
+        .primeira:hover {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 5s linear infinite alternate;
+          }
+
+        .segunda:hover {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 5s linear infinite alternate;
+          }
+
+        .terceira:hover {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 5s linear infinite alternate;
+        }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 1279px) {
+          .primeira {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 10s linear infinite alternate;
+          }
+
+        .segunda {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 10s linear infinite alternate;
+          }
+
+        .terceira {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 10s linear infinite alternate;
+        }
+
+        .h2-code {
+          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
+          background-size: 400% 100%;
+          animation: degrade 10s linear infinite alternate;
+        }
+
+        @keyframes degrade {
+        0%{
+            background-position: 0%;
+        }
+
+        100%{
+            background-position: 400%;
+        }
+        }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 2023px) and (max-height: 1080px) {
+
+        body {
+          background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
+        }
+
+         .link1, .link2, .link3, .link4, .link5, .link6 {
+          margin: 0px 15px;
+          right: 0px;
+          border-radius: 10px 10px 10px 10px;
+         }
+
+        .nav1 {
+          margin-top: 50px;
+        }
+
+        .primeira {
+          color: white;
+          font-family: 'titulo';
+          font-size: 30px;
+          text-align: center;
+          text-shadow: 1px 1px 1px black;
+          border: solid rgb(0, 0, 0) 1px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        .primeira1 {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+          line-height: 2.5;
+        }
+
+        .nav2 {
+          margin-top: 150px;
+        }
+
+        .segunda {
+          color: white;
+          font-family: 'titulo';
+          font-size: 30px;
+          text-align: center;
+          text-shadow: 1px 1px 1px black;
+          border: solid rgb(0, 0, 0) 1px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        .segunda2 {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+          line-height: 2.3;
+        }
+
+        .nav3 {
+          margin-top: 150px;
+        }
+
+        .terceira {
+           color: white;
+          font-family: 'titulo';
+          font-size: 30px;
+          text-align: center;
+          text-shadow: 1px 1px 1px black;
+          border: solid rgb(0, 0, 0) 1px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        .terceira3 {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+          line-height: 2.5;
+        }
+         }
+ 
+        @keyframes degrade {
+        0%{
+            background-position: 0%;
+        }
+
+        100%{
+            background-position: 400%;
+        }
+        }
+        
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+  <body>
+    <header>
+      <h1>Luis Filipi Wolter Nascente</h1>
+        <p class="espacamento">Sou estudante, e de Programção <br>
+        Estou com (17) anos <br>
+        Nasci em <a class="link0" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Louren%C3%A7o_do_Sul" target="_blank">São Lourenço Do Sul RS</a><br>
+        Mas estou morando em <a class="link0" href="https://pt.wikipedia.org/wiki/Camaqu%C3%A3" target="_blank">Camaquã RS</a></p>
+        <main>
+          <section>
+            <nav>
+              <ul class="menu">
+                    <li><a class="link4 efeito-menu1"  href="https://github.com/luisfilipi4" target="_blank" class="branca">GitHub</a></li>
+                    <li><a class="link5" href="https://www.instagram.com/luisfilipiwolternascente/" target="_blank">Instagram</a></li>
+                    <li><a class="link6 efeito-menu2" href="#" target="_blank">LinKedl</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section>
+            <nav class="nav1">
+              <h2 class="primeira efeito-primeiro" >Habilidades</h2>
+              <h3 class="primeira1 efeito-primeiro1">Comecei na (programação em outubro de  2023), consigo ter uma criatividade muito boa, quando tenho um desafio a fazer. Sempre percebi que trabalhar em equipe é a melhor solução,Do que fazer sozinho algum desafio, isso percendo desda da escola.
+                </h3>
+            </nav>
+          </section>
+          <section>
+            <nav class="nav2">
+              <h2 class="segunda efeito-segundo">Curiosidades</h2>
+              <h3 class="segunda2 efeito-segundo2">
+                  Desde pequeno tendo interesse em mexer em computador, mas nunca tendo um pessoal até então (2017) ganhado um notebook.
+                  Praticamente, (90%) de todo evento que já aconteceu comigo seja problemas eu consertei sozinho, experienciando um (Trojan) que não era eliminado usando o Antivírus ou não conseguindo formatar o computador da forma mais simples que todos ensinavam.
+                  Com o computador sempre gostei de jogos, com isso fiquei bastante interessado o que uma simples ou complexa modificação nos arquivos de um jogo, Possa trazer tanta diversão, alterando valores deixando uma ação (true) ou (false). Realmente no quesito saber mexer em um computador mais do que o basico, Então eu andei vários passos desde (2017). Comecei a programar em outubro de (2023) já com muitas metas possiveis.
+                </h3>
+            </nav>
+          </section>
+          <section>
+            <nav class="nav3">
+              <h2 class="terceira efeito-terceiro">Projetos e Possiveis</h2>
+              <h3 class="terceira3 efeito-terceiro3">
+                  Um dos projetos que fiz e importante de mostrar é o do projeto "Mercado-Fruteira-Remar". Que consiste em um site de mercado a base de Front-End, levei menos de 21 dias para fazer esse projeto e ficando mais de 5 horas criando linhas de codigos, depois desse projeto não tenho nenhum em mente mas meu objetivo é aprender melhor JavaScript.
+              </h3>
+            </nav>
+          </section>
+          <section class="site">
+              <iframe class="efeito-quarto" src="../Mercado/mercado.html" height="660px" width="800px"></iframe>
+                <h2 class="h2-code">Linhas-De-Códigos</h2>
+          </section>
+          <picture class="pic-pai">
+            <div class="img-code2 efeito-quinto"><h2 class="HTML">HTML</h2></div>
+            <div class="img-code efeito-quinto"><h2 class="CSS">CSS</h2></div>
+          </picture>
+          <picture class="pic-pai2">
+            <div class="img-code3 efeito-sexto"><h2 class="JS">JavaScript</h2></div>
+          </picture>
+        </main>
+        <script>
+          window.aparecer = ScrollReveal({reset:true})
+          aparecer.reveal('.efeito-primeiro', 
+          {
+            duration: 500,
+            distance: '100px'
+          })
+
+          aparecer.reveal('.efeito-primeiro1', 
+          {
+            duration: 500,
+            distance: '50px',
+            delay: 500
+          })
+
+          aparecer.reveal('.efeito-segundo', 
+          {
+            duration: 500,
+            distance: '100px'
+          })
+
+          aparecer.reveal('.efeito-segundo2', 
+          {
+            duration: 500,
+            distance: '50px',
+            delay: 500
+          })
+
+          aparecer.reveal('.efeito-terceiro', 
+          {
+            duration: 500,
+            distance: '100px'
+          })
+
+          aparecer.reveal('.efeito-terceiro3', 
+          {
+            duration: 500,
+            distance: '20px',
+            delay: 500
+          })
+          aparecer.reveal('.efeito-quarto', 
+          {
+            duration: 500,
+            distance: '20px',
+            delay: 500
+          })
+          aparecer.reveal('.efeito-quinto', 
+          {
+            duration: 500,
+            distance: '20px',
+            delay: 600
+          })
+          aparecer.reveal('.efeito-sexto', 
+          {
+            duration: 500,
+            distance: '20px',
+            delay: 600
+          })
+          
+          aparecer.reveal('.efeito-menu1',
+          {
+            duration: 300,
+            distance: '150px',
+            delay: 1500,
+            origin: 'left'
+          })
+
+          aparecer.reveal('.efeito-menu2', 
+          {
+            duration: 300,
+            distance: '150px',
+            delay: 1500,
+            origin: 'right'
+          })
+        </script>
+  </body>
+</html>
