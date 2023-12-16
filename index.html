@@ -23,6 +23,16 @@
         overflow-x: hidden;
       }
 
+      ::-webkit-scrollbar {
+        width: 10px;
+        background-color: white;      
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 20px;
+      }
+
       h1 {
         background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
         color: white;
@@ -57,6 +67,17 @@
       .branca {
         color: white;
       }
+
+      /* <script>
+        function zoomIn(primeira1) {
+            primeira1.style.transform = "scale(1.8)";
+        }
+
+        function zoomOut(primeira1) {
+            primeira1.style.transform = "scale(1)";
+        }
+    </script>
+    onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" */
 
       .menu {
             display: flex;
@@ -138,18 +159,6 @@
           visibility: hidden;
         }
    
-        .site {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-        }
-
-        iframe {
-          margin-top: 10px;
-          border: 10px solid rgba(0, 0, 0, 0.459);
-        }
-
         .h2-code {
           position: relative;
           width: 99.9%;
@@ -274,10 +283,6 @@
           background-position: 100% 100%;
         }
 
-        .framejs {
-          display: none;
-        }
-
         @media screen and (max-width: 1764px) {
         .pic-pai, .pic-pai2 {
           display: flex;
@@ -297,12 +302,6 @@
             width: 600px;
           }
           .img-code2 {
-            width: 600px;
-          }
-        }
-
-        @media screen and (max-width: 840px) and (min-width: 650px) {
-          iframe {
             width: 600px;
           }
         }
@@ -328,9 +327,6 @@
           }
           .h2-code {
             display: none;
-          }
-          iframe {
-            width: 400px;
           }
         }
 
@@ -550,90 +546,86 @@
               </h3>
             </nav>
           </section>
-          <section class="site">
-              <iframe class="efeito-quarto" src="../Mercado/mercado.html" height="660px" width="800px"></iframe>
-                <h2 class="h2-code">Linhas-De-Códigos</h2>
-          </section>
           <picture class="pic-pai">
-            <div class="img-code2 efeito-quinto"><h2 class="HTML">HTML</h2></div>
-            <div class="img-code efeito-quinto"><h2 class="CSS">CSS</h2></div>
+            <div class="img-code2 efeito-quinto" title="Aviso de Lag ou Travamentos"><h2 class="HTML">HTML</h2></div>
+            <div class="img-code efeito-quinto" title="Aviso de Lag ou Travamentos"><h2 class="CSS">CSS</h2></div>
           </picture>
           <picture class="pic-pai2">
-            <div class="img-code3 efeito-sexto"><h2 class="JS">JavaScript</h2></div>
+            <div class="img-code3 efeito-sexto" title="Aviso de Lag ou Travamentos"><h2 class="JS">JavaScript</h2></div>
           </picture>
         </main>
         <script>
           window.aparecer = ScrollReveal({reset:true})
           aparecer.reveal('.efeito-primeiro', 
           {
-            duration: 500,
+            duration: 100,
             distance: '100px'
           })
 
           aparecer.reveal('.efeito-primeiro1', 
           {
-            duration: 500,
+            duration: 100,
             distance: '50px',
             delay: 500
           })
 
           aparecer.reveal('.efeito-segundo', 
           {
-            duration: 500,
+            duration: 100,
             distance: '100px'
           })
 
           aparecer.reveal('.efeito-segundo2', 
           {
-            duration: 500,
+            duration: 100,
             distance: '50px',
             delay: 500
           })
 
           aparecer.reveal('.efeito-terceiro', 
           {
-            duration: 500,
+            duration: 100,
             distance: '100px'
           })
 
           aparecer.reveal('.efeito-terceiro3', 
           {
-            duration: 500,
+            duration: 100,
             distance: '20px',
             delay: 500
           })
           aparecer.reveal('.efeito-quarto', 
           {
-            duration: 500,
+            duration: 100,
             distance: '20px',
             delay: 500
           })
           aparecer.reveal('.efeito-quinto', 
           {
-            duration: 500,
+            duration: 100,
             distance: '20px',
             delay: 600
           })
           aparecer.reveal('.efeito-sexto', 
           {
-            duration: 500,
+            duration: 100,
             distance: '20px',
             delay: 600
           })
           
           aparecer.reveal('.efeito-menu1',
           {
-            duration: 300,
-            distance: '150px',
-            delay: 1500,
+            duration: 200,
+            distance: '20px',
+            delay: 1000,
             origin: 'left'
           })
 
           aparecer.reveal('.efeito-menu2', 
           {
-            duration: 300,
-            distance: '150px',
-            delay: 1500,
+            duration: 200,
+            distance: '20px',
+            delay: 1000,
             origin: 'right'
           })
         </script>
