@@ -3,607 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoal</title> 
-    <link rel="shortcut icon" href="./pc (1).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./images/pc (1).png" type="image/x-icon">
+    <title>Luis Filipi Perfil</title>
     <style>
-        @font-face {
-            font-family: 'titulo';
-            src: url(../Mercado/Lobster-Regular.ttf);
-        }
+        /* ESTILO GERAL */
+@font-face {
+    font-family: 'titulo';
+    src: url(../Mercado/Lobster-Regular.ttf);
+}
 
-        @font-face {
-            font-family: 'menu';
-            src: url(../Mercado/Agbalumo-Regular.ttf);
-        }
+@font-face {
+    font-family: 'menu';
+    src: url(../Mercado/Agbalumo-Regular.ttf);
+}
 
-      * {
-        margin: 0;
-      }
-
-      body {
-        overflow-x: hidden;
-      }
-
-      ::-webkit-scrollbar {
+::-webkit-scrollbar {
         width: 10px;
         background-color: white;      
-      }
+    }
 
       ::-webkit-scrollbar-thumb {
         background-color: black;
         border-radius: 20px;
-      }
+}
 
-      h1 {
-        background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
-        color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
+    height: 100vh;
+}
+
+.efeito-primeiro {
+    visibility: hidden;
+  }
+  .efeito-primeiro1 {
+    visibility: hidden;
+  }
+  .efeito-segundo {
+    visibility: hidden;
+  }
+  .efeito-segundo2 {
+    visibility: hidden;
+  }
+  .efeito-terceiro {
+    visibility: hidden;
+  }
+  .efeito-terceiro3 {
+    visibility: hidden;
+  }  
+  .efeito-quarto {
+    visibility: hidden;
+  }
+  .efeito-quinto {
+    visibility: hidden;
+  }
+  .efeito-menu1 {
+    visibility: hidden;
+  }
+  .efeito-menu2 {
+    visibility: hidden;
+  }
+
+.topo-do-site {
+    margin-top: 2em;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
+    color: black;
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover {
+    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    color: white;
+    border: solid white 1px;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 40px;
+    background-size: 400% 100%;
+    animation: degrade 2s linear infinite;
+    transform: scale(1.2);
+}
+
+@keyframes degrade {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+h3 span {
+    font-size: 20px;
+    color: #00D1CE;
+}
+
+
+h2.titulo span {
+    color: #00D1CE;
+}
+
+.cor {
+    color: #00fffb;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00D1CE;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades {
+    position: relative;
+    margin-top: 20em;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    color: black;
+    background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    box-shadow: 0 0 20px #00fffb;
+}
+
+#h3-cor {
+    color: black;
+}
+#h3-cor:hover {
+    color: #00fffb;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: black;
+}
+
+.especialidades-box i:hover {
+    color: #00fffb;
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 1020px) {
+    .sobre .txt-sobre {
+        right: 60px;
+    }
+}
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    position: relative;
+    color: #fff;
+}
+
+.sobre .txt-sobre h1 {
+    font-size: 45px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00D1CE;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00D1CE;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+#button-whats:hover {
+    box-shadow: 0px 0px 50px rgb(0, 255, 0);
+}
+#button-git:hover {
+    box-shadow: 0px 0px 100px rgb(0, 37, 248);
+}
+#button-linkedin:hover {
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+
+/* ESTILO DO PORTFÓLIO */
+section.portfolio {
+    position: relative;
+    padding: 80px 4%;
+    margin-top: 20em;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 300px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 2s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO RODAPÉ */
+
+.footer-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.425);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+
+footer .line-footer p i {
+    color: #00D1CE;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    /* CABEÇALHO */
+    .btn-contato {
+        display: flex;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    .especialidades-box {
+        box-shadow: 0 0 20px #00D1CE;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+    }
+    
+    .btn-social{
         text-align: center;
-        font-size: 2em;
-        text-shadow: 1px 1px 1px black;
-        margin-top: 0px;
-        font-family: 'titulo', Arial, Helvetica, sans-serif;
-      }
+    }
 
-      p {
-        background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
-        color: whitesmoke;
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    section.portfolio .flex {
+       gap: 60px;
+    }
+
+    /* RODAPÉ */
+
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
         text-align: center;
-        position: relative;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        text-shadow: 1px 1px 1px black;
-        padding-bottom: 60px;
-        line-height: 2em;
-      }
-      
-      .link0 {
-        color: black;
-        background-color: rgba(128, 128, 128, 0.637);
-      }
-
-      .link0:hover {
-        color: white;
-      }
-
-      .branca {
-        color: white;
-      }
-
-      .menu {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            background-color: black;
-            color: white;
-            list-style-type: none;
-            margin-bottom: 2px;
-            padding: 10px 0px;
-        }
-
-         .link1, .link2, .link3, .link4, .link5, .link6 {
-            display: inline-block;
-            position: relative;
-            font-family: 'menu', serif;
-            background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
-            color: black;
-            background-size: 400% 100%;
-            animation: degrade 10s linear infinite alternate;
-            border-radius: 0px 0px 1px 1px;
-            text-decoration: none;
-            right: 15px;
-            margin: 5px 30px;
-            top: 0px;
-            padding: 10px;
-        }
-
-        .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
-            background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0.685), black);
-            color: white;
-            border: solid white 1px;
-            text-shadow: 1px 1px 1px black;
-            border-radius: 10px 10px 10px 10px;
-            background-size: 400% 100%;
-            animation: degrade 2s linear infinite alternate;
-        }
-
-        @keyframes degrade {
-            0%{
-                background-position: 0%;
-            }
-
-            100%{
-                background-position: 400%;
-            }
-        }
-
-        .efeito-primeiro {
-          visibility: hidden;
-        }
-        .efeito-primeiro1 {
-          visibility: hidden;
-        }
-        .efeito-segundo {
-          visibility: hidden;
-        }
-        .efeito-segundo2 {
-          visibility: hidden;
-        }
-        .efeito-terceiro {
-          visibility: hidden;
-        }
-        .efeito-terceiro3 {
-          visibility: hidden;
-        }  
-        .efeito-quarto {
-          visibility: hidden;
-        }
-        .efeito-quinto {
-          visibility: hidden;
-        }
-        .efeito-menu1 {
-          visibility: hidden;
-        }
-        .efeito-menu2 {
-          visibility: hidden;
-        }
-   
-        .h2-code {
-          position: relative;
-          width: 99.9%;
-          font-size: 2.5em;
-          top: 180px;
-          color: white;
-          font-family: 'titulo';
-          font-size: 30px;
-          text-align: center;
-          text-shadow: 1px 1px 1px black;
-          border: solid rgb(0, 0, 0) 1px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-        .h2-code:hover {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black); 
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;   
-        }
-
-        @keyframes degrade {
-        0%{
-            background-position: 0%;
-        }
-
-        100%{
-            background-position: 400%;
-        }
-        }
-
-        .HTML {
-          position: relative;
-          text-align: center;
-          bottom: 50px;
-          color: white;
-          letter-spacing: 20px;
-          font-family: 'menu', Arial, Helvetica, sans-serif;
-        }
-        .CSS {
-          position: relative;
-          text-align: center;
-          bottom: 50px;
-          color: white;
-          letter-spacing: 20px;
-          font-family: 'menu', Arial, Helvetica, sans-serif;
-        }
-        .JS {
-          position: relative;
-          text-align: center;
-          bottom: 50px;
-          color: white;
-          letter-spacing: 20px;
-          font-family: 'menu', Arial, Helvetica, sans-serif;
-        }
-
-        .pic-pai {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-
-        .img-code {
-          position: relative;
-          margin-top: 130px;
-          margin-bottom: 80px;
-          width: 800px;
-          height: 660px;
-          border: solid 10px rgba(0, 0, 0, 0.459);
-          background-image: url('./CSS.png');
-          background-position: 100% 0%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          transition: 10s;
-          cursor: pointer;
-        }
-
-        .img-code:hover {
-          background-position: 100% 100%;
-        }
-
-        .img-code2 {
-          position: relative;
-          margin-top: 130px;
-          margin-bottom: 80px;
-          width: 800px;
-          height: 660px;
-          border: solid 10px rgba(0, 0, 0, 0.459);
-          background-image: url('./HTML.png');
-          background-position: 100% 0%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          transition: 1s;
-          cursor: pointer;
-        }
-
-        .img-code2:hover {
-          background-position: 100% 100%;
-        }
-        
-        .pic-pai2 {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-        }
-
-        .img-code3 {
-          position: relative;
-          margin-top: 320px;
-          margin-bottom: 80px;
-          width: 1310px;
-          height: 660px;
-          border: solid 10px rgba(0, 0, 0, 0.459);
-          background-image: url('./SCRIPT.png');
-          background-repeat: no-repeat;
-          background-size: cover;
-          transition: 1s;
-          cursor: pointer;
-        }
-
-        .img-code3:hover {
-          background-position: 100% 100%;
-        }
-
-        @media screen and (max-width: 1764px) {
-        .pic-pai, .pic-pai2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        }
-
-        @media screen and (min-width: 850px) {
-          .img-code3 {
-            width: 660px
-          }
-        }
-
-        @media screen and (max-width: 849px) and (min-width: 650px) {
-          .img-code {
-            width: 600px;
-          }
-          .img-code2 {
-            width: 600px;
-          }
-        }
-
-        @media screen and (max-width: 849px) and (min-width: 731px) {
-          .img-code3 {
-            width: 600px;
-          }
-        }
-
-        @media screen and (max-width: 730px) {
-          .img-code3 {
-            display: none;
-          }
-        }
-
-        @media screen and (max-width: 649px) {
-          .img-code {
-            display: none;
-          } 
-          .img-code2 {
-            display: none;
-          }
-          .h2-code {
-            display: none;
-          }
-
-          .quarto {
-            display: none;
-          }
-        }
-
-        @media screen and (min-width: 1023px) {
-
-        .link1, .link2, .link3, .link4, .link5, .link6 {
-          font-size: 15px;
-        }
-
-        .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
-          font-size: 25px;
-          transition: .1s;
-         }
-        }
-
-        @media screen and (max-width: 1022px) {
-
-          .link1, .link2, .link3, .link4, .link5, .link6 {
-            font-size: 15px;
-          }
-
-          .link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover, .link6:hover {
-            font-size: 15px;
-          }
-        }
-
-        @media screen and (min-width: 1280px) {
-        .primeira:hover {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 5s linear infinite alternate;
-          }
-
-        .segunda:hover {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 5s linear infinite alternate;
-          }
-
-        .terceira:hover {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 5s linear infinite alternate;
-        }
-
-        .quarto:hover {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 5s linear infinite alternate;
-        }
-        }
-
-        @media screen and (min-width: 320px) and (max-width: 1279px) {
-          .primeira {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;
-          }
-
-        .segunda {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;
-          }
-
-        .terceira {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;
-        }
-
-        .quarto {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;
-        }
-
-        .h2-code {
-          background-image: linear-gradient( to left, black,  rgba(255, 255, 255, 0), black);         
-          background-size: 400% 100%;
-          animation: degrade 10s linear infinite alternate;
-        }
-
-        @keyframes degrade {
-        0%{
-            background-position: 0%;
-        }
-
-        100%{
-            background-position: 400%;
-        }
-        }
-        }
-
-        @media screen and (min-width: 320px) and (max-width: 2023px) and (max-height: 1080px) {
-
-        body {
-          background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
-        }
-
-         .link1, .link2, .link3, .link4, .link5, .link6 {
-          margin: 0px 15px;
-          right: 0px;
-          border-radius: 10px 10px 10px 10px;
-         }
-
-        .nav1 {
-          margin-top: 50px;
-        }
-
-        .primeira {
-          color: white;
-          font-family: 'titulo';
-          font-size: 30px;
-          text-align: center;
-          text-shadow: 1px 1px 1px black;
-          border: solid rgb(0, 0, 0) 1px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-        .primeira1 {
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: justify;
-          line-height: 2.5;
-        }
-
-        .nav2 {
-          margin-top: 150px;
-        }
-
-        .segunda {
-          color: white;
-          font-family: 'titulo';
-          font-size: 30px;
-          text-align: center;
-          text-shadow: 1px 1px 1px black;
-          border: solid rgb(0, 0, 0) 1px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-        .segunda2 {
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: justify;
-          line-height: 2.3;
-        }
-
-        .nav3 {
-          margin-top: 150px;
-        }
-
-        .terceira {
-          color: white;
-          font-family: 'titulo';
-          font-size: 30px;
-          text-align: center;
-          text-shadow: 1px 1px 1px black;
-          border: solid rgb(0, 0, 0) 1px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-        .terceira3 {
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: justify;
-          line-height: 2.5;
-        }
-
-        .terceira4 {
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: justify;
-          font-size: 20px;
-          line-height: 2.5;
-        }
-
-        .quarto {
-          color: white;
-          font-family: 'titulo';
-          font-size: 30px;
-          text-align: center;
-          text-shadow: 1px 1px 1px black;
-          border: solid rgb(0, 0, 0) 1px;
-          margin-top: 250px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }   
-
-        .quarto4 {
-          color: white;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-family: Arial, Helvetica, sans-serif;
-          text-align: justify;
-          line-height: 2.5;         
-        }
-        }
- 
-        @keyframes degrade {
-        0%{
-            background-position: 0%;
-        }
-
-        100%{
-            background-position: 400%;
-        }
-        }
-        
+    }
+}
     </style>
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-  <body>
-    <header>
-      <h1>Luis Filipi Wolter Nascente</h1>
-        <p class="espacamento">Sou estudante, e de Programção <br>
-        Estou com (17) anos <br>
-        Nasci em <a class="link0" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Louren%C3%A7o_do_Sul" target="_blank">São Lourenço Do Sul RS</a><br>
-        Mas estou morando em <a class="link0" href="https://pt.wikipedia.org/wiki/Camaqu%C3%A3" target="_blank">Camaquã RS</a></p>
-        <main>
-          <section>
-            <nav>
-              <ul class="menu">
-                    <li><a class="link4 efeito-menu1"  href="https://github.com/luisfilipi4" target="_blank" class="branca">GitHub</a></li>
-                    <li><a class="link5" href="https://www.instagram.com/luisfilipiwolternascente/" target="_blank">Instagram</a></li>
-                    <li><a class="link6 efeito-menu2" href="#" target="_blank">LinKedl</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section>
-            <nav class="nav1">
-              <h2 class="primeira efeito-primeiro">Tenha seu comércio ou empresa em forma de site na internet</h2>
-              <ul class="terceira4 efeito-terceiro3">
-                
-                <li>Por R$ 50 Reais consigo fazer seu site só com o resumo dos Produtos (Sem mudanças após escolhidos) e Promoções com preços (Atualizados toda Sexta-Feira se tiver).</li>
-                <li>Por R$ 100 Reais consigo fazer seu site com todos os Produtos que escolher com (Atualização uma vez a cada Duas semanas) para não interferir no meu cotidiano.</li>
-                <li>Por R$ 150 Reais seu site vai ter todos os produtos e promoções (Atualizados por qualquer mudança feita).</li>
-                <li>Sera cobrado depois de 2 meses, contando o mês que pagou (R$ 30 Reais) todos os meses e em qualquer dia do mês, para comprar o custo de se manter o site ativo na internet como a (Hospedagem) e (Domínio do site) além de contribuir com um pequeno valor, o uso do site disponibilizado por um preço acessível se comparado com outros Programadores que vedem sites.</li>
-              </ul>
-            </nav>
-          </section>
-          <section>
-            <nav class="nav1">
-              <h2 class="primeira efeito-primeiro" >Habilidades</h2>
-              <h3 class="primeira1 efeito-primeiro1">Comecei na (programação em outubro de  2023), consigo ter uma criatividade muito boa, quando tenho um desafio a fazer. Sempre percebi que trabalhar em equipe é a melhor solução, do que fazer sozinho algum desafio, isso percebendo desda da escola.
-                </h3>
-            </nav>
-          </section>
-          <section>
-            <nav class="nav2">
-              <h2 class="segunda efeito-segundo">Curiosidades</h2>
-              <h3 class="segunda2 efeito-segundo2">
-                  Desde pequeno tendo interesse em mexer em computador, mas nunca tendo um pessoal até então (2017) ganhado um notebook.
-                  Praticamente, (90%) de todo evento que já aconteceu comigo sejam problemas eu consertei sozinho, experienciando um (Trojan) que não era eliminado usando o Antivírus ou não conseguindo formatar o computador da forma mais simples que todos ensinavam.
-                  Com o computador sempre gostei de jogos, com isso fiquei bastante interessado o que uma simples ou complexa modificação nos arquivos de um jogo, possa trazer tanta diversão, alterando valores deixando uma ação (true) ou (false). Realmente no quesito saber mexer em um computador mais do que o básico, então eu andei vários passos desde (2017). Comecei a programar em outubro de (2023) já com muitas metas possíveis.
-                </h3>
-            </nav>
-          </section>
-          <section>
-          <section>
-            <nav class="nav3">
-              <h2 class="terceira efeito-terceiro">Projetos e Possíveis</h2>
-              <h3 class="terceira3 efeito-terceiro3">
-                  Um dos projetos que fiz e importante mostrar é o do projeto 'Mercado-Front-End'. Que consiste em um site de mercado a base de Front-End, levei menos de 21 dias para fazer esse projeto e ficando mais de 5 horas criando linhas de códigos, depois desse projeto não tenho nenhum em mente, mas meu objetivo é aprender melhor JavaScript.
-              </h3>
-            </nav>
-          </section>
-          <h2 class="quarto efeito-quarto">Linhas de Códigos</h2>
-          <picture class="pic-pai">
-            <div class="img-code2 efeito-quinto" title="Aviso de Lag ou Travamentos"><h2 class="HTML">HTML</h2></div>
-            <div class="img-code efeito-quinto" title="Aviso de Lag ou Travamentos"><h2 class="CSS">CSS</h2></div>
-          </picture>
-          <picture class="pic-pai2">
-            <div class="img-code3 efeito-sexto" title="Aviso de Lag ou Travamentos"><h2 class="JS">JavaScript</h2></div>
-          </picture>
-        </main>
-        <script>
+<body>
+    <main>
+        <header class="topo-do-site">
+            <section>
+                <div class="interface efeito-primeiro">
+                    <div class="flex">
+                        <div class="txt-topo-site efeito-primeiro1">
+                            <h1>Olá, sou Desenvolvedor Web e me chamo <span>Luis Filipi Wolter Nascente.</span></h1>
+                            <p>Sou estudante e de Programção, para contato, meu instagram profissional.</p>
+                            <div class="btn-contato">
+                                <a href="#">
+                                    <button>Instagram</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="sobre">
+            <div class="interface efeito-segundo">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.png" alt="">
+                    </div>
+                    <div class="txt-sobre efeito-segundo2">
+                        <h1>Sobre mim</h1>
+                        <h2>Nasce em <span>São Lourenço do Sul </span>Mas estou morando em <span>Camaquã.</span></h2>
+                        <p>Comecei na <span class="cor">programação em outubro de  2023</span>, consigo ter uma criatividade muito boa, quando tenho um desafio a fazer. Sempre percebi que trabalhar em equipe é a melhor solução, do que fazer sozinho algum desafio, isso percebendo desda da escola.</p>
+                        <p>Um dos projetos que fiz e importante mostrar é o do projeto <span class="cor">Mercado-Front-End</span>. Que consiste em um site de mercado a base de Front-End, levei menos de 21 dias para fazer esse projeto e ficando mais de 5 horas criando linhas de códigos. Logo mais vou atualziar essa seção de projeto e colocar os propios e não linhas de códigos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo efeito-quarto">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <h3 class="efeito-quarto4">Eu posso pagar sua <span>HOSPEDAGEM</span> de site e seu <span>Domínio</span> com um plano cheio de <span>Benefícios</span> como <span>CloudFlare</span>, que permite que o site carregue 30% mais rápido e mais estabilidade e segurança contra-ataques na internet, certificado <span>SSL</span> pago que vem com Validação da Organização (OV).  <span>SiteLock</span>, fornece mais segurança e <span>Ferramentas de Marketgoo SEO</span>, que melhora o tráfego do site, download de relatórios SEO em PDF, conecte o <span>Google Analytics</span> e outras coisas. Tudo isso por um preço de <span>R$170 Reais</span> por mês.</h3>
+                <h2 class="titulo">Abaixo o que eu posso fazer para <span>você.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box efeito-terceiro3">
+                        <i class="bi bi-code-square"></i>
+                        <h3 id="h3-cor">Website</h3>
+                        <p>Posso fazer um site desde simples até um mais complexo para sua empresa ou comércio.</p>
+                    </div>
+                    <div class="especialidades-box efeito-terceiro3">
+                        <i class="bi bi-cart"></i>
+                        <h3 id="h3-cor">Loja online</h3>
+                        <p>Posso fazer um site de amostras de produtos a venda com preços, promoções, carrinho de compras com valor total, localização com mapa GPS, clima, e muitos outros recursos  adicionais, mas que por enquanto sem compras online.</p>
+                    </div>
+                    <div class="especialidades-box efeito-terceiro3">
+                        <i class="bi bi-wordpress"></i>
+                        <h3 id="h3-cor">Blog</h3>
+                        <p>Posso fazer um site pessoal para você, ou algo parecido que não é dá área  de venda de produtos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio efeito-quarto">
+            <div class="interface">
+                <h2 class="titulo">Linhas de códigos do meu primeiro projeto de <br>
+                    <span>Mercado-Front-End</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(./images/HTML1.png);">
+                        <div class="overlay">HTML</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(./images/CSS.png);">
+                        <div class="overlay">CSS</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(./images/SCRIPT.png);">
+                        <div class="overlay">SCRIPT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-redes">
+        <div class="btn-social">
+            <a href="https://wa.me/5551995542680"><button id="button-whats"><i class="bi bi-whatsapp efeito-menu1"></i></button></a>
+            <a href="#"><button id="button-git"><i class="bi bi-github efeito-menu2"></i></button></a>
+            <a href="#"><button id="button-linkedin"><i class="bi bi-linkedin efeito-menu3"></i></button></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
           window.aparecer = ScrollReveal({reset:true})
           aparecer.reveal('.efeito-primeiro', 
           {
@@ -639,44 +576,39 @@
 
           aparecer.reveal('.efeito-terceiro3', 
           {
-            duration: 100,
+            duration: 200,
             distance: '20px',
-            delay: 500
+            delay: 800
           })
           aparecer.reveal('.efeito-quarto', 
           {
             duration: 100,
             distance: '20px',
+          }) 
+          aparecer.reveal('.efeito-quarto4', 
+          {
+            duration: 100,
+            distance: '20px',
             delay: 500
-          })
-          aparecer.reveal('.efeito-quinto', 
+          }) 
+          aparecer.reveal('.efeito-menu1', 
           {
             duration: 100,
             distance: '20px',
-            delay: 600
-          })
-          aparecer.reveal('.efeito-sexto', 
-          {
-            duration: 100,
-            distance: '20px',
-            delay: 600
-          })
-          
-          aparecer.reveal('.efeito-menu1',
-          {
-            duration: 200,
-            distance: '20px',
-            delay: 1000,
-            origin: 'left'
-          })
-
+            delay: 1000
+          }) 
           aparecer.reveal('.efeito-menu2', 
           {
-            duration: 200,
+            duration: 100,
             distance: '20px',
-            delay: 1000,
-            origin: 'right'
-          })
-        </script>
-  </body>
+            delay: 1500
+          }) 
+          aparecer.reveal('.efeito-menu3', 
+          {
+            duration: 100,
+            distance: '20px',
+            delay: 2000
+          }) 
+    </script>
+</body>
 </html>
