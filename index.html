@@ -1,619 +1,308 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <title>Perfil</title>  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="./images/pc (1).png" type="image/x-icon">
-    <title>Luis Filipi Perfil</title>
-    <style>
-        /* ESTILO GERAL */
-@font-face {
-    font-family: 'titulo';
-    src: url(../Mercado/Lobster-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'menu';
-    src: url(../Mercado/Agbalumo-Regular.ttf);
-}
-
-::-webkit-scrollbar {
-        width: 10px;
-        background-color: white;      
-    }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: black;
-        border-radius: 20px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-image: linear-gradient(to right, #1b2283, #265264, #1bc7a7);
-    height: 100vh;
-}
-
-.efeito-primeiro {
-    visibility: hidden;
-  }
-  .efeito-primeiro1 {
-    visibility: hidden;
-  }
-  .efeito-segundo {
-    visibility: hidden;
-  }
-  .efeito-segundo2 {
-    visibility: hidden;
-  }
-  .efeito-terceiro {
-    visibility: hidden;
-  }
-  .efeito-terceiro3 {
-    visibility: hidden;
-  }  
-  .efeito-quarto {
-    visibility: hidden;
-  }
-  .efeito-quinto {
-    visibility: hidden;
-  }
-  .efeito-menu1 {
-    visibility: hidden;
-  }
-  .efeito-menu2 {
-    visibility: hidden;
-  }
-
-.topo-do-site {
-    margin-top: 2em;
-}
-
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
-    color: black;
-    background-size: 400% 100%;
-    animation: degrade 10s linear infinite alternate;
-    border: 0;
-    border-radius: 40px;
-    left: 20px;
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.btn-contato button:hover {
-    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-    color: white;
-    border: solid white 1px;
-    text-shadow: 1px 1px 1px black;
-    border-radius: 40px;
-    background-size: 400% 100%;
-    animation: degrade 2s linear infinite;
-    transform: scale(1.2);
-}
-
-@keyframes degrade {
-    0%{
-        background-position: 0%;
-    }
-
-    100%{
-        background-position: 400%;
-    }
-}
-
-h2.titulo {
-    color: #fff;
-    font-size: 38px;
-    text-align: center;
-}
-
-h3 {
-    color: white;
-}
-
-h3 span {
-    font-size: 20px;
-    color: #00D1CE;
-}
-
-
-h2.titulo span {
-    color: #00D1CE;
-}
-
-.cor {
-    color: #00fffb;
-}
-
-/* ESTILO DO TOPO DO SITE */
-section.topo-do-site {
-    padding: 40px 4%;
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1 {
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
-}
-
-.topo-do-site .txt-topo-site h1 span {
-    color: #00D1CE;
-}
-
-.topo-do-site .txt-topo-site p {
-    color: #fff;
-    margin: 10px 0;
-}
-
-/* ESTILO DAS ESPECIALIDADES */
-section.especiliadades {
-    position: relative;
-    margin-top: 20em;
-}
-
-section.especiliadades .flex {
-    gap: 60px;
-}
-
-.especiliadades .especialidades-box {
-    color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especiliadades .especialidades-box:hover {
-    transform: scale(1.05);
-    color: black;
-    background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
-    background-size: 400% 100%;
-    animation: degrade 10s linear infinite alternate;
-    box-shadow: 0 0 20px #00fffb;
-}
-
-#h3-cor {
-    color: black;
-}
-#h3-cor:hover {
-    color: #00fffb;
-}
-
-.especiliadades .especialidades-box i {
-    font-size: 70px;
-    color: black;
-}
-
-.especialidades-box i:hover {
-    color: #00fffb;
-}
-
-.especiliadades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-@media screen and (min-width: 1020px) {
-    .sobre .txt-sobre {
-        right: 60px;
-    }
-}
-
-/* ESTILO DO SOBRE */
-section.sobre {
-    padding: 80px 4%;
-}
-
-section.sobre .flex {
-    align-items: center;
-    gap: 60px;
-}
-
-.sobre .txt-sobre {
-    position: relative;
-    color: #fff;
-}
-
-.sobre .txt-sobre h1 {
-    font-size: 45px;
-}
-
-.sobre .txt-sobre h2 {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
-}
-
-.sobre .txt-sobre h2 span {
-    color: #00D1CE;
-    display: block;
-}
-
-.sobre .txt-sobre p {
-    margin: 20px 0;
-    text-align: justify;
-}
-
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #00D1CE;
-    font-size: 30px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-}
-
-#button-whats:hover {
-    box-shadow: 0px 0px 50px rgb(0, 255, 0);
-}
-#button-git:hover {
-    box-shadow: 0px 0px 100px rgb(0, 37, 248);
-}
-#button-linkedin:hover {
-    box-shadow: 0px 0px 50px rgb(255, 255, 255);
-}
-
-/* ESTILO DO PORTFÓLIO */
-section.portfolio {
-    position: relative;
-    padding: 80px 4%;
-    margin-top: 20em;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-
-section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.img-port {
-    width: 300px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000b8;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    opacity: 0;
-    transition: 2s;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
-/* ESTILO DO RODAPÉ */
-
-.footer-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.425);
-}
-
-footer .flex {
-    justify-content: space-between;
-}
-
-footer .line-footer {
-    padding: 20px 0;
-}
-
-
-footer .line-footer p i {
-    color: #00D1CE;
-    font-size: 22px;
-}
-
-footer .line-footer p a {
-    color: #fff;
-}
-
-.span-margin {
-    position: relative;
-        margin-top: 10px;
-    }
-
-@media screen and (max-width: 1020px) {
-
-    /* CLASSES GERAIS */
-    .flex {
-        flex-direction: column;
-    }
-
-    .topo-do-site .flex{
-        flex-direction: column-reverse;
-    }
-
-    h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
-        margin-top: 20px;
-    }
-
-    /* CABEÇALHO */
-    .btn-contato {
-        display: flex;
-    }
-
-    /* TOPO DO SITE */
-
-    section.topo-do-site .flex {
-        gap: 40px;
-    }
-
-    section.topo-do-site {
-        padding: 20px 8%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 30px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
-
-    /* ESPECIALIDADES */
-    section.especiliadades {
-        padding: 40px 8%;
-    }
-
-    .especialidades-box {
-        box-shadow: 0 0 20px #00D1CE;
-    }
-
-    /* SOBRE */
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
-    }
-    
-    .btn-social{
-        text-align: center;
-    }
-
-    .img-sobre img{
-        width: 100%;
-    }
-
-    /* PORTFÓLIO */
-    section.portfolio {
-        padding: 80px 8%;
-    }
-
-    .img-port {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-    
-    section.portfolio .flex {
-       gap: 60px;
-    }
-
-    /* RODAPÉ */
-
-
-    footer .flex {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    footer .line-footer {
-        text-align: center;
-    }
-}
-    </style>
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="./images/logoeu.png">
 </head>
-<body>
-    <main>
-        <header class="topo-do-site">
-            <section>
-                <div class="interface efeito-primeiro">
-                    <div class="flex">
-                        <div class="txt-topo-site efeito-primeiro1">
-                            <h1>Olá, sou Desenvolvedor Web e de Aplicativos <br>
-                             e me chamo <span>Luis Filipi Wolter Nascente.</span></h1>
-                            <p>Sou estudante e de Programção, para contato, meu instagram profissional.</p>
-                            <div class="btn-contato">
-                                <a target="_blank" href="https://www.instagram.com/luisfilipiwn/">
-                                    <button>Instagram</button>
-                                </a>
+<body data-spy="scroll" data-target=".fixed-top">  
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <img src="./images/logoeu.png" width="100" height="100" alt="">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#porqueeu">Por que eu?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#perguntas">Duvidas?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contatos">Contato</a>
+                    </li>
+                </ul>
+            </div> 
+        </div> 
+    </nav>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="h1-large h1-breve">Minha paixão em criar Sites ou Apps é que sei que empresas que não tenham ainda, possam ter por um preço justo a algo que no futuro próximo será praticamente normal e indispensável.</h1>
+                        <a class="btn-solid-lg page-scroll" href="#about">Sobre</a>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </header>
+    <div id="about" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row intro-centro">
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h2 class="branco">Olá, me chamo <span id="span-color">Luis Filipi</span> e sou <span id="span-color">Desenvolvedor Web</span> e de <span id="span-color">Aplicativos Híbridos</span>.</h2>
+                        <p class="branco">Nasce em <span id="span-color">São Lourenço do Sul</span> mas estou morando em <span id="span-color">Camaquã-RS</span></p>
+                        <p>Tenho experiência em: <br><span id="span-color">
+                                Resolução de problemas <br>
+                                Gestão de projetos <br>
+                                Marketing <br>
+                                Desenvolvimento web <br>
+                                Desenvolvimento de software Híbridos</span></p>
+                    </div> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <p class="p-historia branco">Faço meus <span id="span-color">SITES</span> e <span id="span-color">APLICATIVOS</span> com Front-End puro e tendo sempre o objetivo de resolver algum problema de <span id="span-color">não visibilidade</span> da empresa, podendo melhorar ela ou então criar uma melhor <span id="span-color">alternativa de Marketing</span> se baseando em um <span id="span-color">SITES</span> ou <span id="span-color">APPS</span>, e buscando o benefício que pode trazer. Mas que ainda esse ano vou está melhorando minhas experiências, que estou nesse Front-End desde de <span id="span-color">outubro de 2023</span>.</p>
+                    </div> 
+                </div> 
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <p class="p-historia branco">Comecei na programação em <span id="span-color">outubro de 2023</span>, consigo ter uma criatividade muito boa, quando tenho um desafio a fazer. Sempre percebi que trabalhar em equipe é a melhor solução, mesmo tendo criado muita habilidade em resolver um problema por conta própria.</p>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+    </div>
+    <div id="services" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading branco">Abaixo o que eu posso fazer para <span id="span-color">você</span>.</h2>
+                    <p class="p-heading branco">Tudo isso tendo um Design bem desenvolvido </p>
+                </div> 
+            </div> 
+            <div class="flex caixas">
+                <div class="especialidades-box efeito-terceiro3">
+                    <i class="bi bi-code-square"></i>
+                    <h3 id="h3-cor">Website</h3>
+                    <p style="color: black;">Posso fazer um site desde simples até um mais complexo para sua empresa ou comércio.</p>
+                </div>
+                <div class="especialidades-box efeito-terceiro3">
+                    <i class="bi bi-cart"></i>
+                    <h3 id="h3-cor">Loja online</h3>
+                    <p style="color: black;">Posso fazer um site de amostras de produtos a venda com preços, promoções, carrinho de compras com valor total, localização com mapa GPS, clima, e muitos outros recursos  adicionais, mas que por enquanto sem compras online.</p>
+                </div>
+                <div class="especialidades-box efeito-terceiro3">
+                    <i class="bi bi-wordpress"></i>
+                    <h3 id="h3-cor">Blog</h3>
+                    <p style="color: black;">Posso fazer um site pessoal para você, ou algo parecido que não é dá área  de venda de produtos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="split" id="porqueeu">
+	<div class="area-1">
+		</div><div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        <div class="text-container">
+                            <h2 class="ciano">Por que trabalhar comigo?</h2>
+                            <p>Não é só a parte do custo benefício que meus projetos tem, mas sim o meu lado de entender o porque do cliente não poder mostrar que o seu estabelecimento pode ser capaz. Tendo algo que pode causar muita visibilidade, podendo conquistar assim novos clientes e aos que já eram, uma novidade e experiência que talvez eles nunca pensaram que o estabelecimento que eles frequentam poderia ter, mas que no futuro isso será muito normal e que quanto mais cedo poder tiver esse meio maior de alcance do estabelecimento, melhor vai sair contras outros talvez concorrentes, que só faram quando verem que todo mundo já tem algo próprio online</p>
+                            <h5 class="ciano">Ferramentas a oferecer</h5>
+                            <p class="branco">"Carrinho de Compras Integrado" mas sem compras online, apenas com a função de cálculo total dos produtos <br> "Catálogo Completo de Produtos e Promoções" <br> "Histórico e Recomendação de Produtos" <br> "Localização com GPS Interativo do estabelecimento" <br> "Horários de Funcionamento e Contato da Empresa" <br> e até um "Clima da Cidade" para um diferencial.</p>
+                            <h5 class="ciano">Minhas habilidades</h5>
+                            <p class="branco">Estou familiarizado e trabalho diariamente com HTML, CSS, JavaScript, e começando com Bootstrap e outros frameworks modernos</p>
+                            <div class="icons-container">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+		</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> 
+        </div> 
+    </div> 
+    <div class="accordion-1" id="perguntas">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading branco">Possíveis duvidas</h2>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header branco" id="headingOne">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Como posso entrar em contato com você e obter rapidamente um orçamento para meu projeto online?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body branco">
+                                    Para pessoas que preferem mandar por Email "luisfilipidev@gmail.com" mas também pelo meu Instagram profissional <a href="https://www.instagram.com/luisfilipiwn/" target="_blank">@luisfilipiwn</a> meu  <a href="https://wa.me/5551995542680">Whatsapp</a> e outras redes sociais minhas.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </header>
-        <section class="sobre">
-            <div class="interface efeito-segundo">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="images/foto.png" alt="">
-                    </div>
-                    <div class="txt-sobre efeito-segundo2">
-                        <h1>Sobre mim</h1>
-                        <h2>Nasce em <span>São Lourenço do Sul </span>Mas estou morando em <span>Camaquã.</span></h2>
-                        <p>Comecei na <span class="cor">programação em outubro de  2023</span>, consigo ter uma criatividade muito boa, quando tenho um desafio a fazer. Sempre percebi que trabalhar em equipe é a melhor solução, mesmo tendo criado muita <span class="cor">habilidade</span> em resolver um problema por conta própria.</p>
-                        <p>Um dos projetos que fiz e importante mostrar é o do projeto <span class="cor">Mercado-Front-End</span>. Que consiste em um site de mercado a base de Front-End, levei menos de 21 dias para fazer esse projeto e ficando mais de 5 horas criando linhas de códigos. Atualmente esse site está totalmente diferente dos que eu faço e logo mais vou atualziar essa seção de projeto e colocar os propios e não linhas de códigos.</p>
-                    </div>
-                </div>
+                        <div class="card">
+                            <div class="card-header branco" id="headingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Como você cria os desings?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body branco">
+                                    Busco as referências que o cliente me ofereceu, os detalhes e fazendo tudo por apenas linhas de códigos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header branco" id="headingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Receberei alguma manutenção ou contato após a entrega do projeto? 
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body branco">
+                                    Claro que sim, sempre vou manter contato do cliente, não importe o tempo que já estamos juntos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header ciano" id="headingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    O que acontece após cancelar o pagamento do Site ou App?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body branco">
+                                    Não acontecera mais o plano de pagamento por mês e o Site ou Aplicativo será retirado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header ciano" id="headingFive">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Quais os método de pagamento?
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body branco">
+                                    Apenas por PIX ou PayPal.
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <!-- <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact details</h2>
+                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
+                </div> 
             </div>
-        </section>
-        <section class="especiliadades">
-            <div class="interface">
-                <h2 class="titulo efeito-quarto">MINHAS <span>ESPECIALIDADES.</span></h2>
-                <h3 class="efeito-quarto4">Eu posso pagar sua <span>HOSPEDAGEM</span> de site e seu <span>Domínio</span> com um plano cheio de <span>Benefícios</span> como <span>CloudFlare</span>, que permite que o site carregue 30% mais rápido e mais estabilidade e segurança contra-ataques na internet, certificado <span>SSL</span> pago que vem com Validação da Organização (OV).  <span>SiteLock</span>, fornece mais segurança e <span>Ferramentas de Marketgoo SEO</span>, que melhora o tráfego do site, download de relatórios SEO em PDF, conecte o <span>Google Analytics</span> e outras coisas. Tudo isso por um preço de <span>R$170 Reais</span> por mês.</h3>
-                <h2 class="titulo">Abaixo o que eu posso fazer para <span>você.</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box efeito-terceiro3">
-                        <i class="bi bi-code-square"></i>
-                        <h3 id="h3-cor">Website</h3>
-                        <p>Posso fazer um site desde simples até um mais complexo para sua empresa ou comércio.</p>
-                    </div>
-                    <div class="especialidades-box efeito-terceiro3">
-                        <i class="bi bi-cart"></i>
-                        <h3 id="h3-cor">Loja online</h3>
-                        <p>Posso fazer um site de amostras de produtos a venda com preços, promoções, carrinho de compras com valor total, localização com mapa GPS, clima, e muitos outros recursos  adicionais, mas que por enquanto sem compras online.</p>
-                    </div>
-                    <div class="especialidades-box efeito-terceiro3">
-                        <i class="bi bi-wordpress"></i>
-                        <h3 id="h3-cor">Blog</h3>
-                        <p>Posso fazer um site pessoal para você, ou algo parecido que não é dá área  de venda de produtos.</p>
-                    </div>
-                </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" action="enviar_email.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" name="nome" required>
+                            <label class="label-control" for="cname">Nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" name="email" required>
+                            <label class="label-control" for="cemail">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" name="mensagem" required></textarea>
+                            <label class="label-control" for="cmessage">Mensagem</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Enviar</button>
+                        </div>
+                    </form>                    
+                </div> 
             </div>
-        </section>
-        <section class="portfolio efeito-quarto">
-            <div class="interface">
-                <h2 class="titulo">Linhas de códigos do meu primeiro projeto de <br>
-                    <span class="span-margin">Mercado-Front-End</span></h2>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(./HTML.png);">
-                        <div class="overlay">HTML</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(./CSS.png);">
-                        <div class="overlay">CSS</div>
-                    </div>
+        </div> 
+    </div> -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/profile.php?id=100081163277933" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/luisfilipi4" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="bi bi-github fa-stack-1x efeito-menu2"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/luis-filipi-wolter-nascente-9283022b3/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="bi bi-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/luisfilipiwn/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://wa.me/5551995542680" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="bi bi-whatsapp fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-redes">
-        <div class="btn-social">
-            <a target="_blank" href="https://wa.me/5551995542680"><button id="button-whats"><i class="bi bi-whatsapp efeito-menu1"></i></button></a>
-            <a target="_blank" href="https://github.com/luisfilipi4"><button id="button-git"><i class="bi bi-github efeito-menu2"></i></button></a>
-            <a target="_blank" href="https://www.linkedin.com/in/luis-filipi-wolter-nascente-9283022b3/"><button id="button-linkedin"><i class="bi bi-linkedin efeito-menu3"></i></button></a>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-          window.aparecer = ScrollReveal({reset:true})
-          aparecer.reveal('.efeito-primeiro', 
-          {
-            duration: 100,
-            distance: '100px'
-          })
-
-          aparecer.reveal('.efeito-primeiro1', 
-          {
-            duration: 100,
-            distance: '50px',
-            delay: 500
-          })
-
-          aparecer.reveal('.efeito-segundo', 
-          {
-            duration: 100,
-            distance: '100px'
-          })
-
-          aparecer.reveal('.efeito-segundo2', 
-          {
-            duration: 100,
-            distance: '50px',
-            delay: 500
-          })
-
-          aparecer.reveal('.efeito-terceiro', 
-          {
-            duration: 100,
-            distance: '100px'
-          })
-
-          aparecer.reveal('.efeito-terceiro3', 
-          {
-            duration: 200,
-            distance: '20px',
-            delay: 800
-          })
-          aparecer.reveal('.efeito-quarto', 
-          {
-            duration: 100,
-            distance: '20px',
-          }) 
-          aparecer.reveal('.efeito-quarto4', 
-          {
-            duration: 100,
-            distance: '20px',
-            delay: 500
-          }) 
-          aparecer.reveal('.efeito-menu1', 
-          {
-            duration: 100,
-            distance: '20px',
-            delay: 1000
-          }) 
-          aparecer.reveal('.efeito-menu2', 
-          {
-            duration: 100,
-            distance: '20px',
-            delay: 1500
-          }) 
-          aparecer.reveal('.efeito-menu3', 
-          {
-            duration: 100,
-            distance: '20px',
-            delay: 2000
-          }) 
-    </script>
+            </div> 
+        </div> 
+    </div> 
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="contatos">
+                    <p class="p-small">luisfilipidev@gmail.com</p>
+                    <p class="p-small">Copyright © LuisFilipiW.N</a></p>
+                </div> 
+            </div> 
+        </div> 
+    </div> 	
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery.easing.min.js"></script> 
+    <script src="js/scripts.js"></script> 
 </body>
 </html>
