@@ -139,14 +139,29 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
+    background-image: linear-gradient(to right, #44AEE5, #76B8E4, #59E5E5, #2BD7E6, #11A9E6);
+	background-size: 400% 100%;
+    animation: degrade 10s linear infinite;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	background: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
 }
 
 .btn-solid-lg:hover {
@@ -340,12 +355,33 @@ input[type='checkbox'] {
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #24262a;
+	background-color: transparent;
+	/* background-color: #000000e3; */
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 	height: 90px;
+}
+
+.navbar.top-nav-collapse {
+	padding-top: 0.5rem;
+	padding-top: 0.5rem;
+	background-color: #000000e3;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
+}
+
+.offcanvas-collapse {
+	position: static;
+	top: auto;
+	bottom: auto;
+	left: auto;
+	width: auto;
+	padding-right: 0;
+	padding-left: 0;
+	background-color: transparent;
+	overflow-y: visible;
+	visibility: visible;
 }
 
 .navbar .navbar-brand {
@@ -368,7 +404,8 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 5.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	padding-top: 10px;
+	top: 89px; 
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -376,7 +413,7 @@ input[type='checkbox'] {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #24262a;
+	background-color: #000000e3;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -401,57 +438,9 @@ input[type='checkbox'] {
 	transition: all 0.2s ease;
 }
 
-.navbar .nav-item.dropdown.show .nav-link,
-.navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-	color: #9c9ead;
+	color: #00fffb;
 }
-
-/* Dropdown Menu */
-.navbar .dropdown .dropdown-menu {
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
-}
-
-@keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-	}
-}
-
-.navbar .dropdown-menu {
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	border: none;
-	background-color: #24262a;
-}
-
-.navbar .dropdown-item {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 0.875rem;
-	line-height: 0.875rem;
-	text-decoration: none;
-}
-
-.navbar .dropdown-item:hover {
-	background-color: #24262a;
-	color: #9c9ead;
-}
-
-.navbar .dropdown-divider {
-	width: 100%;
-	height: 1px;
-	margin: 0.5rem auto 0.5rem auto;
-	border: none;
-	background-color: #505050;
-}
-/* end of dropdown menu */
 
 .navbar .fa-stack {
 	width: 2em;
@@ -490,7 +479,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/codewall.avif') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.418)), url('../images/codewall.avif') center center no-repeat;
 	background-size: cover;
 }
 
@@ -905,10 +894,47 @@ input[type='checkbox'] {
 /******************/
 /*     Footer     */
 /******************/
+.bi-whatsapp:hover {
+	background-color: rgb(0, 255, 0);
+	color: white;
+	border-radius: 50px;
+	transform: translateY(-5px); 
+    transition: transform 1s ease; 
+}
+.fa-instagram:hover {
+    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+	color: white;
+	border-radius: 50px;
+	transition: 1s;
+	transform: translateY(-5px); 
+    transition: transform 1s ease; 
+}
+.bi-linkedin:hover {
+	background-color: #0b36a8;
+	color: white;
+	border-radius: 50px;
+	transform: translateY(-5px); 
+    transition: transform 1s ease; 
+}
+.bi-github:hover {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	border-radius: 50px;
+	transform: translateY(-5px); 
+    transition: transform 1s ease; 
+}
+.bi-facebook:hover {
+	background-color: #0b36a8;
+	color: white;
+	border-radius: 50px;
+	transform: translateY(-5px); 
+    transition: transform 1s ease; 
+}
+
 .footer {
 	padding-top: 6.25rem;
 	padding-bottom: 2rem;
-	background-color: #24262a;
+	background-color: black;
 	text-align: center;
 }
 
@@ -924,21 +950,11 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #ffffff;
 	transition: all 0.2s ease;
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #0b36a8;
 	transition: all 0.2s ease;
-}
-
-.footer .fa-stack:hover .fa-stack-1x {
-	color: #0b36a8;
-}
-
-.footer .fa-stack:hover .fa-stack-2x {
-    color: #ffffff;
 }
 
 
@@ -948,7 +964,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background-color: #24262a;
+	background-color: black;
 	text-align: center;
 }
 
@@ -980,7 +996,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #0b36a8;
+	background-color: red;
 }
 
 
@@ -1101,7 +1117,7 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-top: 0.5rem;
-		background-color: #24262a;
+		background-color: #000000e3;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
@@ -1126,6 +1142,24 @@ a:hover.back-to-top {
 	.navbar .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	.nav-item:hover {
+		background-image: linear-gradient(to right, #000000, #000000, #000000);
+		background-size: 400% 100%;
+		color: black;
+		animation: degrade 10s linear infinite;
+		border-radius: 20px;
+	}
+
+	@keyframes degrade {
+		0%{
+			background-position: 0%;
+		}
+	
+		100%{
+			background-position: 400%;
+		}
 	}
 	
 	.navbar .nav-item .nav-link {
