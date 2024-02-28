@@ -659,10 +659,11 @@ input[type='checkbox'] {
 /*     Details     */
 /*******************/
 .area-1 {
-	height: 450px;
+	height: 500px;
 	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(0, 0, 0, 0.377)), url('../images/eu-foto.jpeg') center center no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: bottom;
+	background-color: white;
 }
 
 .split .area-2 {
@@ -901,7 +902,7 @@ input[type='checkbox'] {
 	transform: translateY(-5px); 
     transition: transform 1s ease; 
 }
-.fa-instagram:hover {
+.bi-instagram:hover {
     background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
 	color: white;
 	border-radius: 50px;
@@ -1060,6 +1061,8 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 
