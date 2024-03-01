@@ -676,7 +676,7 @@ input[type='checkbox'] {
 }
 
 .split .icons-container {
-	margin-top: 3rem;
+	margin-top: -1rem;
 }
 
 .split .icons-container img {
@@ -1325,7 +1325,7 @@ a:hover.back-to-top {
 
 	/* Details */
 	.split {
-		height: 1020px;
+		height: 1130px;
 	}
 
 	.split .text-container {
