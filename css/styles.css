@@ -13,9 +13,26 @@ body, p {
 	color: red;
 }
 
-#empresa {
-	padding-top: 7.75rem;
-    padding-bottom: 5.25rem;
+@media screen and (max-width: 767px) {
+	#empresa {
+		padding-top: 7.75rem;
+		padding-bottom: 5.25rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	#empresa {
+		padding-top: 7.75rem;
+		padding-bottom: 5.25rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.div-empresa {
+		margin-top: 160px;
+	}
+	#empresa {
+		padding-top: 0.75rem;
+		padding-bottom: 5.25rem;
+	}
 }
 
 .h1-breve {
