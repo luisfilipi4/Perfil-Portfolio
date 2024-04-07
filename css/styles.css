@@ -13,6 +13,11 @@ body, p {
 	color: red;
 }
 
+#empresa {
+	padding-top: 7.75rem;
+    padding-bottom: 5.25rem;
+}
+
 .h1-breve {
 	color: white;
 	font-size: 30px;
@@ -28,6 +33,7 @@ h2 {
 }
 
 h3 {
+	margin-top: 10px;
 	color: #24262a;
 	font-weight: 700;
 	font-size: 1.75rem;
@@ -660,14 +666,13 @@ input[type='checkbox'] {
 /*******************/
 .area-1 {
 	height: 500px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0), rgba(0, 0, 0, 0)), url('../images/borrado\ \(2\).png') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0), rgba(0, 0, 0, 0)), url('../images/foto2.png') no-repeat;
 	background-size: contain;
 	background-position: bottom;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 }
 
 .split .area-2 {
-	padding-top: 7.75rem;
 	padding-bottom: 7.80rem;
 }
 
