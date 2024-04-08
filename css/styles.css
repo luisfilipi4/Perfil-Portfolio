@@ -13,6 +13,10 @@ body, p {
 	color: red;
 }
 
+.textinho {
+	font-size: 20px;
+}
+
 @media screen and (max-width: 767px) {
 	#empresa {
 		padding-top: 7.75rem;
