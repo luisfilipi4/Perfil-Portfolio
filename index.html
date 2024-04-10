@@ -428,7 +428,7 @@ Clique em "Substituir tudo" ou pressione Alt + Enter para substituir todas as oc
                             </a>
                         </span>
                         <span class="fa-stack efeito-quarto">
-                            <a href="https://www.instagram.com/luisfilipiwn/" target="_blank">
+                            <a href="https://www.instagram.com/dev_sites_apps/" target="_blank">
                                 <i class="bi bi-instagram fa-stack-1x"></i>
                             </a>
                         </span>
@@ -463,12 +463,11 @@ Clique em "Substituir tudo" ou pressione Alt + Enter para substituir todas as oc
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="plugins/shuffle/shuffle.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/scripts.js"></script> <!-- Coloque os seus scripts personalizados por último -->    
+    <script src="js/scripts.js"></script> 
 <script>
 
 $(document).ready(function(){
     new WOW().init();
-        // Exibir legendas com animação quando o slide é exibido
         $('.carousel-item').on('slide.bs.carousel', function () {
       $(this).find('.carousel-caption').show();
       $(this).find('.carousel-caption [data-animation]').each(function() {
@@ -477,7 +476,6 @@ $(document).ready(function(){
       });
     });
 
-    // Esconder legendas quando o slide é ocultado
     $('.carousel-item').on('slid.bs.carousel', function () {
       $(this).siblings().find('.carousel-caption').hide();
     });
