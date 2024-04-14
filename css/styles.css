@@ -958,6 +958,11 @@ input[type='checkbox'] {
 	margin: 0 auto;
 }
 
+#depoimento {
+	padding-top: 7.75rem;
+	padding-bottom: 6.25rem;
+}
+
 .testimonial {
 	text-align: center;
 }
