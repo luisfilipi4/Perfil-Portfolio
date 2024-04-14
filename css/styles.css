@@ -667,7 +667,6 @@ input[type='checkbox'] {
     border-radius: 20px; 
 }
 
-
 .service-item i:hover {
 	color: #00fffb;
 }
@@ -781,7 +780,7 @@ input[type='checkbox'] {
 /*******************/
 .area-1 {
 	height: 500px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0), rgba(0, 0, 0, 0)), url('../images/foto2.png') no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0), rgba(0, 0, 0, 0)), url('../images/cinza.png') no-repeat;
 	background-size: contain;
 	background-position: bottom;
 	background-color: rgb(255, 255, 255);
@@ -890,6 +889,8 @@ input[type='checkbox'] {
 /************************/
 /*     Testimonials     */
 /************************/
+
+/*  
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 3.875rem;
@@ -933,7 +934,55 @@ input[type='checkbox'] {
 .cards-1 .occupation {
 	font-size: 0.875rem;
 	line-height: 1.375rem;
+} */
+
+.depoimentos {
+	margin-top: 8em;
+	margin-bottom: 10px;
+	text-align: center;
 }
+
+.largo {
+	font-size: 45px;
+}
+
+.testimonials-container {
+	position: relative;
+	background-image: url('../images/edificios.avif'); 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+	margin-top: 20px;
+	padding-bottom: 35px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.testimonial {
+	text-align: center;
+}
+
+.testimonial img {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 50%; 
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.h5-dep {
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 1px black;
+	color: #ffffff;
+}
+
+.comit-dep {
+	text-shadow: 1px 1px 1px black;
+	color: #ffffff;
+}
+
 
 
 /*********************/
