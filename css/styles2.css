@@ -1,0 +1,26 @@
+/******************/
+/*     Header2    */
+/******************/
+
+.fundo-detalhes {
+    background-image: url('../images/codewall.avif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+	position: relative;
+    height: 500px;
+}
+
+.text-white, .fw-semi-bold {
+    text-decoration: none;
+}
+
+.img-news{
+    height: 500px;
+    width: 700px;
+    margin: 10px;
+}
+
+#botao-link {
+    background-color: red;
+}
