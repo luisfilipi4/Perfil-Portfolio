@@ -653,6 +653,13 @@ input[type='checkbox'] {
 
 .caixa-info {
     position: relative;
+	width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+	.caixa-info {
+		margin: auto;
+	}
 }
 
 .caixa-info:hover::before {
