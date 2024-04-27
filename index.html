@@ -42,6 +42,9 @@
         </div>
     </div>
     <!-- Preloader Start -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt" id="icone-top"></i></a>
+    </div>
     <header>
         <div class="top-bar d-md-block">
             <div class="container-fluid">
@@ -577,9 +580,7 @@
         <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-    </div>
+
 
     <!-- JS here -->
 
@@ -622,6 +623,21 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
+// Aguarda o carregamento completo da página
+window.addEventListener('load', function() {
+    // Mostra o botão de subir ao topo
+    document.getElementById('back-top').style.display = 'block';
+
+    // Lógica para subir ao topo quando o botão for clicado
+    document.getElementById('back-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const phoneNumberElement = document.getElementById('phone-number');
     const phoneNumberCopiedElement = document.getElementById('phone-number-copied');
