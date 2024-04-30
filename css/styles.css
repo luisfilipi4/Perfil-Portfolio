@@ -150,7 +150,7 @@ h5 {
 }
 
 a {
-	color: #4d5055;
+	color: #007bff;
 	text-decoration: underline;
 }
 
@@ -641,7 +641,6 @@ input[type='checkbox'] {
 	margin-right: 0.375rem;
 }
 
-
 /*****************/
 /*     About     */
 /*****************/
@@ -958,56 +957,79 @@ input[type='checkbox'] {
 /*     Testimonials     */
 /************************/
 
-.depoimentos {
-	margin-top: 8em;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-.largo {
-	font-size: 45px;
-}
-
-.testimonials-container {
+/* Estilos para a seção de depoimentos */
+.section-testimonials {
+	margin-top: 10rem;
+    padding-top: 7.75rem;
+    padding-bottom: 6.25rem;
+    text-align: center;
 	position: relative;
 	background-image: url('../images/edificios.avif'); 
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed; 
-	margin: 0 auto;
-	margin-top: 20px;
-	padding-bottom: 35px;
-	width: 100%;
+    color: #000000;
 }
 
-#depoimento {
-	padding-top: 7.75rem;
-	padding-bottom: 6.25rem;
+.testimonials-heading {
+    margin-bottom: 3rem;
 }
 
 .testimonial {
-	text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial img {
-	width: 100px;
-	height: 100px;
 	margin: auto;
-	border-radius: 50%; 
-	margin-top: 50px;
-	margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#title-dp {
+	color: white;
+	text-shadow: 1px 1px 5px black;
 }
 
 .h5-dep {
-	font-size: 18px;
-	margin-bottom: 10px;
-	text-shadow: 1px 1px 1px black;
-	color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .comit-dep {
-	text-shadow: 1px 1px 1px black;
-	color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial {
+	display: none;
+}
+.testimonial.active {
+	display: block;
+}
+
+.btn-nav {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #111;
+    color: #fff;
 }
 
 /*********************/
@@ -1129,6 +1151,79 @@ input[type='checkbox'] {
 	color: red;
 }
 
+.wrapper {
+    position: fixed;
+    bottom: 100px;
+    right: -370px;
+    max-width: 345px;
+    width: 100%;
+    background: #000000;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+  }
+  .wrapper.show {
+    right: 20px;
+  }
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  header i {
+    color: #4070f4;
+    font-size: 32px;
+  }
+  header h2 {
+    color: #4070f4;
+    font-weight: 500;
+  }
+  .wrapper .data {
+    margin-top: 16px;
+  }
+  .wrapper .data p {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .data p a {
+    color: #4070f4;
+    text-decoration: none;
+  }
+  .data p a:hover {
+    text-decoration: underline;
+  }
+  .wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: #4070f4;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .buttons #acceptBtn:hover {
+    background-color: #034bf1;
+  }
+  #declineBtn {
+    border: 2px solid #000000;
+    background-color: #fff;
+    color: #4070f4;
+  }
+  #declineBtn:hover {
+    background-color: #4070f4;
+    color: #fff;
+  } 
+
 /******************/
 /*     Footer     */
 /******************/
@@ -1195,6 +1290,7 @@ input[type='checkbox'] {
 .footer .fa-stack .fa-stack-2x {
 	transition: all 0.2s ease;
 }
+
 
 #p-link {
 	text-decoration: none;

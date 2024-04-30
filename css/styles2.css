@@ -30,6 +30,10 @@
 	animation: spin 1s linear infinite;
 }
 
+#title-sub {
+	z-index: 124;
+}
+
 .fundo-detalhes {
     position: relative;
     height: 500px;
