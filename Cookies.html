@@ -176,7 +176,6 @@
     <script src="js/scripts.js"></script> 
     <script src="https://kit.fontawesome.com/6c999c6add.js" crossorigin="anonymous"></script>
     <script>
-const tempoExibicaoPreload = 2000; 
 function esconderPreload() {
     const preloadContainer = document.getElementById('preload-container');
     const siteContent = document.getElementById('site-content');
@@ -185,8 +184,28 @@ function esconderPreload() {
 
     document.body.style.overflow = 'auto';
 }
-setTimeout(esconderPreload, tempoExibicaoPreload);
 
+// Calcular o tempo de exibição do preload com base no tempo de carregamento da página
+window.addEventListener('load', () => {
+    const tempoInicio = performance.now();
+
+    // Função para verificar o tempo decorrido e chamar esconderPreload()
+    function verificarTempoDecorrido() {
+        const tempoAtual = performance.now();
+        const tempoDecorrido = tempoAtual - tempoInicio;
+
+        // Esconde o preload após um determinado tempo (por exemplo, 2000ms)
+        if (tempoDecorrido >= 500) { // Ajuste o tempo limite conforme necessário
+            esconderPreload();
+        } else {
+            // Verifica novamente em breve se o tempo decorrido ainda não atingiu o limite
+            requestAnimationFrame(verificarTempoDecorrido);
+        }
+    }
+
+    // Inicia o processo de verificação do tempo decorrido
+    verificarTempoDecorrido();
+});
     </script>
 </body>
 </html>

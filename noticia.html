@@ -38,7 +38,7 @@
                     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <div class="navbar-collapse offcanvas-collapse" id="nav-menu" id="navbarsExampleDefault">
                     </div>
                 </div>
             </nav>
@@ -169,7 +169,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/scripts.js"></script> 
     <script>
-        const tempoExibicaoPreload = 2000; 
 function esconderPreload() {
     const preloadContainer = document.getElementById('preload-container');
     const siteContent = document.getElementById('site-content');
@@ -178,7 +177,28 @@ function esconderPreload() {
 
     document.body.style.overflow = 'auto';
 }
-setTimeout(esconderPreload, tempoExibicaoPreload);
+
+// Calcular o tempo de exibição do preload com base no tempo de carregamento da página
+window.addEventListener('load', () => {
+    const tempoInicio = performance.now();
+
+    // Função para verificar o tempo decorrido e chamar esconderPreload()
+    function verificarTempoDecorrido() {
+        const tempoAtual = performance.now();
+        const tempoDecorrido = tempoAtual - tempoInicio;
+
+        // Esconde o preload após um determinado tempo (por exemplo, 2000ms)
+        if (tempoDecorrido >= 500) { // Ajuste o tempo limite conforme necessário
+            esconderPreload();
+        } else {
+            // Verifica novamente em breve se o tempo decorrido ainda não atingiu o limite
+            requestAnimationFrame(verificarTempoDecorrido);
+        }
+    }
+
+    // Inicia o processo de verificação do tempo decorrido
+    verificarTempoDecorrido();
+});
     </script>
 </body>
 </html>
