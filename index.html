@@ -2,351 +2,820 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <title>Luis Filipi W.N</title>  
+<!-- Links para fontes do Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-    <!-- ===============================================--><!--    Document Title--><!-- ===============================================-->
-    <title>Prevenção Digital Dengue</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- ===============================================--><!--    Favicons--><!-- ===============================================-->
-    <link rel="icon" href="./imgs/preveno-digital-dengue-high-resolution-logo-black.png" width="100">
 
-    <!-- ===============================================--><!--    Stylesheets--><!-- ===============================================-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
-    <link href="assets/css/theme.min.css" rel="stylesheet" id="style-default">
-    <link href="assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
-    <link href="assets/css/user.min.css" rel="stylesheet" id="user-style-default">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="style.css">
+<!-- Ícones Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- Animações CSS (Animate.css) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<!-- Biblioteca Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Owl Carousel CSS -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+
+
+<!-- Lightbox CSS -->
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Font Awesome CSS -->
+<link href="css/fontawesome-all.css" rel="stylesheet">
+
+<!-- Estilos personalizados (seu arquivo styles.css) -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Ícone do Favicon -->
+<link rel="shortcut icon" href="./images/logoeu.png" type="image/x-icon">
 </head>
-  <body>
-      <header id="header-navbar">
-        <nav class="navbar navbar-expand-md fixed-top navbar-solid" id="navbar">
-            <div class="container-fluid px-0"><a href="#"><img class="navbar-brand  d-md-none" src="imgs/preveno-digital-dengue-high-resolution-logo-transparent.png" width="130" height="50" alt="logo"></a><a class="navbar-brand fw-bold d-none d-md-block" href="#"></a><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbar-content" data-navbar-collapse="data-navbar-collapse">
-                <a class="navbar-brand" href="#"><img class="logo-desktop" src="imgs/preveno-digital-dengue-high-resolution-logo-transparent.png" width="150" height="50" alt="logo"></a>
-                <div class="d-inline-flex align-items-center" id="div-a-icons">
-              </div>
-                <div class="navbar-nav border-top">
-                    <li id="item-li"><a href="#home" class="nav-item nav-link active">Home</a></li>
-                    <li id="item-li"><a href="#sobre" class="nav-item nav-link">Sobre</a></li>
-                    <li id="item-li"><a href="#sobre-dengue" class="nav-item nav-link">Sobre a Dengue</a></li>
-                    <li id="item-li"><a href="#" class="nav-item nav-link">Alertas e Notificações</a></li>
-                    <li id="item-li"><a href="#" class="nav-item nav-link">Mapa Interativo</a></li>
-                    <div class="nav-item dropdown" id="toggle-icon">
-                        <a href="#" id="item-a" class="nav-link" data-bs-toggle="dropdown">Recursos Educacionais <i id="seta-baixo" class="fa-solid fa-caret-down"></i><i id="seta-cima" class="fa-solid fa-caret-up" style="display:none;"></i></a>
-                        <div class="dropdown-menu m-0 rounded-0" id="dropdown-desktop">
-                            <li id="drop-item-pai"><a href="#" class="dropdown-item" id="drop-item">Dropdown 1</a></li>
-                            <li id="drop-item-pai"><a href="#" class="dropdown-item" id="drop-item">Dropdown 2</a></li>
-                            <li id="drop-item-pai"><a href="#" class="dropdown-item" id="drop-item">Dropdown 3</a></li>
-                        </div>
-                    </div>
-                    <li id="item-li"><a href="#" class="nav-item nav-link">Denúncias e Feedback</a></li>
+<body data-spy="scroll" data-target=".fixed-top">
+    <div id="preload-container">
+        <img id="imagem-preload" src="./images/lgoeu-loading.png" width="150" height="100" alt="LOGO CARREGAMENTO">
+        <div id="preload-spinner"></div>
+    </div>    
+    <section id="site-content" class="preload-hidden">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                <a class="nav-link page-scroll" href="#header"><img src="./images/lgoeu2.png" width="100" height="70" alt=""></a>
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#empresa">Dev Sites Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#services">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#porqueumsite">Por que preciso?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#porqueeu">Por que eu?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#testimonials">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#perguntas">Dúvidas?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#news">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#contatos">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            </div>
-          </nav>
-      </header>
-      <header id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="./imgs/detalhado.jpeg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">A dengue é uma doença viral transmitida pela picada do mosquito Aedes aegypti</h1>
-                        </div>
+        </nav>
+        <header id="header">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/codewall.avif" class="d-block" alt="Slide 1">
+                    <div class="carousel-caption">
+                      <h2 class="animated fadeInUp texto-slide slide">Minha paixão em criar Sites ou Apps é que sei que empresas que não tenham ainda, possam ter por um preço justo a algo que no futuro próximo será praticamente normal e indispensável.</h2>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/Uma imagem mostrando recipientes com água parada, como pneus, vasos de plantas e garrafas, destacará a importância de eliminar criadouros.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Água parada é o principal criadouro do mosquito da dengue. Elimine recipientes que possam acumular água</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/Uma ilustração mostrando os sintomas típicos da dengue, como febre, dor de cabeça e erupção cutânea, pode ajudar os visitantes a reconhecerem os sinais da doença.webp" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Os sintomas da dengue incluem febre alta, dor de cabeça, dor muscular e erupção cutânea</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/praticando medidas de prevenção.webp" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">A prevenção é a melhor forma de combater a dengue. Mantenha sua casa e quintal livres de água parada</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/praticando medidas de prevenção.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Use repelente de insetos e vista roupas que cubram a maior parte do corpo para se proteger contra picadas de mosquitos</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/Profissional de saúde cuidando de paciente com dengue.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">A dengue pode ser grave e até mesmo fatal. Procure assistência médica imediatamente se apresentar sintomas</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="./imgs/automedicacao.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Evite automedicação. O tratamento adequado da dengue deve ser orientado por um profissional de saúde</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="./imgs/Comunidade trabalhando juntos contra a dengue.jpg" alt="Image">
-                  <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                      <div class="p-3" style="max-width: 900px;">
-                          <h1 class="display-1 text-white mb-md-4 animated zoomIn">A comunidade é fundamental no combate à dengue. Trabalhe em conjunto para eliminar os focos de mosquitos</h1>
-                      </div>
                   </div>
-              </div>
-              <div class="carousel-item">
-                <img class="w-100" src="./imgs/doente-repouso-agua.jpg" alt="Image">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">A dengue não tem tratamento específico, mas os sintomas podem ser aliviados com repouso e hidratação adequada</h1>
+                  <div class="carousel-item">
+                    <img src="images/virtual.png" class="d-block" alt="Slide 2">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide">Um site é a vitrine digital do seu negócio, acessível a qualquer momento e de qualquer lugar.</h2>
                     </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img class="w-100" src="./imgs/prevenção.jpg" alt="Image">
-              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                  <div class="p-3" style="max-width: 900px;">
-                      <h1 class="display-1 text-white mb-md-4 animated zoomIn">A prevenção é responsabilidade de todos. Junte-se à luta contra a dengue e proteja sua família e comunidade</h1>
                   </div>
-              </div>
-          </div>
-            </div>
-            <button class="carousel-control-prev slides-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next slides-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>            
-              </div>
-      </header>
-      <header id="header-statics">
-        <div class="container-fluid facts py-5 pt-lg-0">
-            <div id="container-statics" class="py-5 pt-lg-0" id="blocos-statics">
-                <div class="row gx-0">
-                    <div id="bloco-static1" class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                        <div class=" shadow d-flex align-items-center justify-content-center p-4"
-                            style="height: 150px;">
-                            <div class=" d-flex align-items-center justify-content-center rounded mb-2"
-                                style="width: 60px; height: 60px;">
-                                <img src="./imgs/dengue-block1.webp" width="100" height="100" alt="">
-                            </div>
-                            <div class="ps-4">
-                                <h5 class="text-white mb-0">Mais de 5 milhões de casos em 2024 no Brasil</h5>
-                                <h1 id="counter1" class=" mb-0" data-target="5000000">0</h1>                                                           
-                            </div>
-                        </div>
+                  <div class="carousel-item">
+                    <img src="images/globo.jpg" class="d-block" alt="Slide 3">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide ">Ter um site proporciona credibilidade e confiança aos seus clientes, mostrando que você está presente no mundo online</h2>
                     </div>
-                    <div id="bloco-static2" class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                        <div class=" shadow d-flex align-items-center justify-content-center p-4"
-                            style="height: 150px;">
-                            <div class=" d-flex align-items-center justify-content-center rounded mb-2"
-                                style="width: 60px; height: 60px;">
-                                <img src="./imgs/casos-graves.webp" width="100" height="100" alt="">
-                            </div>
-                            <div class="ps-4">
-                                <h5 class="text-white mb-0">Mais de 2 mil óbitos em investigação</h5>
-                                <h1 id="counter2" class=" mb-0" data-target="2500">+2.500</h1>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/ferramenta.jpg" class="d-block" alt="Slide 4">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide">Um site é uma poderosa ferramenta de marketing, permitindo que você promova seus produtos, serviços e valores de forma eficaz.</h2>
                     </div>
-                    <div id="bloco-static3" class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                        <div class=" shadow d-flex align-items-center justify-content-center p-4"
-                            style="height: 150px;">
-                            <div class=" d-flex align-items-center justify-content-center rounded mb-2"
-                                style="width: 60px; height: 60px;">
-                                <img src="./imgs/luto.webp" width="100" height="100" alt="">
-                            </div>
-                            <div class="ps-4">
-                                <h5 class="text-white mb-0">Mais de 3 mil óbitos confirmados</h5>
-                                <h1 id="counter3" class=" mb-0" data-target="3000">+3.000</h1>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/investir.jpg" class="d-block" alt="Slide 5">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide">Ao investir em um site, você investe no crescimento futuro do seu negócio, preparando-se para os desafios e oportunidades do mundo digital.</h2>
                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/historia.jpg" class="d-block" alt="Slide 6">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide">Um site é mais do que uma presença online, é uma plataforma para contar a história da sua marca e se conectar emocionalmente com seu público.</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/edificios.avif" class="d-block" alt="Slide 7">
+                    <div class="carousel-caption">
+                      <h2 class="animated slideInDown texto-slide">Não importa o tamanho do seu negócio, um site é uma ferramenta essencial para competir e prosperar no mercado atual.</h2>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="sobre">
-            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container py-5">
-                    <div class="row g-5">
-                        <div class="col-lg-7">
-                            <div class="section-title position-relative pb-3">
-                                <h5 class="fw-bold text-green text-uppercase">Prevenção Digital Dengue</h5>
-                                <h1 class="mb-0">Um projeto dedicado à prevenção e combate à dengue</h1>
-                            </div>
-                            <p>Meu nome é Luis Filipi e sou um programador dedicado a combater a dengue de forma digital. Desenvolvi o site Prevenção Digital Dengue para fornecer informações precisas e recursos valiosos que ajudem as comunidades a se protegerem contra essa doença.</p>
-                            <p>Como programador e cidadão preocupado com a saúde pública, percebi a necessidade de uma plataforma centralizada que ofereça ferramentas e informações práticas para a prevenção da dengue. Minha experiência pessoal e profissional me levou a iniciar este projeto.</p>
-                            <div class="row g-0">
-                                <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                                    <h5 id="mb-1 icon-check"><i class="fa fa-check me-3"></i>Iniciativa Individual</h5>
-                                    <h5 id="mb-1 icon-check"><i class="fa fa-check me-3"></i>Informações Confiáveis</h5>
-                                    <h5 id="mb-1 icon-check"><i class="fa fa-check me-3"></i>Ajudar ao próximo</h5>
-                                    <h5 id="mb-1 icon-check"><i class="fa fa-check me-3"></i>Recursos Educativos</h5>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </header>
+        <main>
+            <section>
+                <div id="about" class="basic-1 bg-gray">
+                    <div class="container">
+                        <div class="row intro-centro">
+                            <!-- Lado esquerdo (col-lg-4) -->
+                            <div class="col-lg-4">
+                                <div class="text-container first wow fadeInUp">
+                                    <article>
+                                        <h2 class="branco">Olá, me chamo <span id="span-color">Luis Filipi</span> e sou <span id="span-color">Desenvolvedor Web</span> e de <span id="span-color">Aplicativos Híbridos</span>.</h2>
+                                        <p class="branco">Nasce em <span id="span-color">São Lourenço do Sul,</span> mas estou morando em <span id="span-color">Camaquã-RS</span></p>
+                                        <p>Tenho experiência em: <br><span id="span-color">
+                                            Marketing <br>
+                                            Gestão de projetos <br>
+                                            Desenvolvimento web <br>
+                                            Resolução de problemas <br>
+                                            Desenvolvimento de software Híbridos
+                                        </span></p>
+                                    </article>
                                 </div>
                             </div>
-                            <div class="row g-0" id="mb-1">
-                                <h4 id="mb-1">Futuras Colaborações</h4>
-                                <p>Estou totalmente aberto a parcerias com organizações de saúde, ONGs e outras entidades dedicadas à prevenção da dengue. Acredito que a colaboração é essencial para amplificar nosso impacto e alcançar mais pessoas. Se sua organização está interessada em colaborar comigo, por favor entre em contato.</p>
-                            </div>
-                            <p>Para mais informações sobre mim ou para discutir parcerias, visite meu site de perfil:</p>
-                            <a href="https://luisfilipi4.github.io/Perfil-Portfolio/" target="_blank" id="button-contato" class="btn pd-1rem wow zoomIn" data-wow-delay="0.9s">Site</a>
-                            <a href="https://wa.link/uozhdu" target="_blank" id="button-contato" class="btn pd-1rem wow zoomIn" data-wow-delay="0.9s">Entre em Contato <i class="bi bi-whatsapp"></i></a>
-                        </div>
-                        <div class="col-lg-5" style="min-height: 500px;">
-                            <h4>A Prenvenção Digital Dengue está sediada em Camaquã-RS, Rio Grande do Sul</h4>
-                            <p>Toque ou clique nas setas para ver pelo Google Maps</p>
-                            <div class="position-relative" id="carousel-container">
-                                <img id="carousel-image" class="carousel-slide position-absolute w-100 wow zoomIn" data-wow-delay="0.9s" src="./imgs/Camaqua3.jpg" style="object-fit: contain;">
-                                <iframe id="carousel-map" class="carousel-slide position-absolute w-100 wow zoomIn" data-wow-delay="0.9s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27401.73528213611!2d-51.80590109999999!3d-30.852601549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951a76e15d01cbf5%3A0x43f7d6f5b9bfbf4e!2sCamaqu%C3%A3%2C%20RS%2C%2096180-000!5e0!3m2!1spt-BR!2sbr!4v1717948713230!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <button id="prev-slide" class="carousel-control-prev img-iframe-control-prev" onclick="prevSlide()">
-                                    &#10094;
-                                </button>
-                                <button id="next-slide" class="carousel-control-next img-iframe-control-next" onclick="nextSlide()">
-                                    &#10095;
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sobre-dengue" class="sobre-dengue">
-            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="container py-5">
-                    <div class="section-title position-relative mb-1">
-                        <h5 class="fw-bold text-green text-uppercase">Informações Importantes</h5>
-                        <h1 class="mb-0">O que é a Dengue?</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-lg-7">
-                            <p>A dengue é uma doença viral transmitida pelo mosquito Aedes aegypti, que causa febre alta, dores musculares e articulares, e pode levar a complicações graves.</p>
-                            <div class="row g-0 mb-1">
-                                <h4>Sintomas</h4>
-                                <ul>
-                                    <li>Febre alta</li>
-                                    <li>Dores musculares e articulares intensas</li>
-                                    <li>Dor de cabeça</li>
-                                    <li>Dor atrás dos olhos</li>
-                                    <li>Erupção cutânea</li>
-                                    <li>Náuseas e vômitos</li>
-                                </ul>
-                            </div>
-                            <div class="row g-0 mb-1">
-                                <h4>Prevenção</h4>
-                                <ul>
-                                    <li>Elimine focos de água parada</li>
-                                    <li>Use repelente</li>
-                                    <li>Instale telas de proteção nas janelas</li>
-                                    <li>Mantenha recipientes de água bem fechados</li>
-                                    <li>Limpe calhas e caixas d'água regularmente</li>
-                                </ul>
-                            </div>
-                            <div class="row g-0 mb-1">
-                                <h4>Tratamento</h4>
-                                <p>Não existe um tratamento específico para a dengue. O tratamento é sintomático, focado em aliviar os sintomas e manter a hidratação. Em casos graves, a hospitalização pode ser necessária.</p>
-                            </div>
-                            <p>Para mais informações sobre a dengue, recomendo que visite o site: Conheça Dengue</p>
-                            <a href="https://conhecadengue.com.br/" target="_blank" id="button-site" class="btn pd-1rem wow zoomIn" data-wow-delay="0.9s">Conheça Dengue</a>
-                        </div>
-                        <div class="col-lg-5" style="min-height: 500px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                                    src="./imgs/dengue-info.webp" style="object-fit: contain;">
+            
+                            <!-- Lado direito (col-lg-6) -->
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <!-- Primeira coluna -->
+                                    <div class="col-lg-6 wow fadeInUp">
+                                        <div class="text-container second">
+                                            <p class="p-historia branco">Sou um desenvolvedor web de <span id="span-color"><span id="span-color">Front-End</span></span> focado em criar sites e aplicativos com o propósito claro de <span id="span-color">resolver desafios de visibilidade e marketing</span> para empresas. Meu objetivo é não apenas melhorar a presença online de uma empresa, mas também <span id="span-color">encontrar soluções inovadoras</span> que impulsionem seu crescimento e alcance.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Segunda coluna -->
+                                    <div class="col-lg-6 wow fadeInUp">
+                                        <div class="text-container second">
+                                            <p class="p-historia branco">Desde que entrei no mundo do <span id="span-color">Front-End</span> em <span id="span-color">outubro de 2023</span>, tenho sido impulsionado pela minha <span id="span-color">criatividade</span> e pela paixão por enfrentar desafios. A cada projeto, descubro novas maneiras de combinar funcionalidade e design para entregar soluções que não só atendam às necessidades do cliente, mas também superem suas expectativas.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Terceira coluna -->
+                                    <div class="col-lg-6 wow fadeInUp">
+                                        <div class="text-container second">
+                                            <p class="p-historia branco">Embora valorize minha <span id="span-color">capacidade de resolver problemas de forma independente</span>, aprendi que o trabalho em <span id="span-color">equipe é fundamental</span>. Ao colaborar com outros talentos, posso ampliar minha perspectiva e aprimorar minhas habilidades.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Quarta coluna -->
+                                    <div class="col-lg-6 wow fadeInUp">
+                                        <div class="text-container second">
+                                            <p class="p-historia branco">Estou comprometido em aprimorar continuamente minhas habilidades e conhecimentos ao longo deste ano, buscando novas oportunidades para expandir minha experiência no desenvolvimento <span id="span-color">Front-End</span>.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer id="contatos">
-        <div class="container-fluid footer position-relative text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row g-5 py-5">
-                    <div class="col-lg-6 pe-lg-5">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="h1 text-primary mb-0"><img
-                                    src="imgs/preveno-digital-dengue-high-resolution-logo-transparent.png"
-                                    width="250" height="90" alt=""></h1>
-                        </a>
-                        <p class="mb-4 text-white margin-top" style="font-size: 20px;">Um projeto dedicado à prevenção e combate à dengue.</p>
-                        <p class="text-white"><i class="fa fa-map-marker-alt me-2"></i>Camaquã-RS, Rio Grande do Sul,
-                            Brasil</p>
-                        <p class="text-white"><i class="fa fa-envelope me-2"></i>solutionswebdosul@gmail.com</p>
-                        <div class="d-flex mt-4">
-                            <a target="_blank" id="buttons" class="btn btn-lg-square fundo-yellow me-2" href="https://luisfilipi4.github.io/Perfil-Portfolio/">Site</a>
-                            <a target="_blank" id="buttons" class="btn btn-lg-square fundo-yellow me-2"
-                                href="https://wa.link/uozhdu"> <i class="bi bi-whatsapp"></i></a>
+            </section>
+            
+            <section>
+                <div id="empresa">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 ">
+                                    <h2 class="h2-heading branco wow fadeInUp">Quem é essa empresa chamada <span id="span-color">Dev Sites Apps</span>?</h2>
+                                    <div class="screen-normal wow fadeInUp">
+                                        <img src="./images/home.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mobmartop30 1 div-empresa">
+                                    <div class="tagline-v2 padleft30 wow fadeInUp">
+                                        <h3 class="margin-top">É essa nada grande casa rosa, morando nela um CEO e Desenvolvedor que ama criar presenças digitais para diversas pessoas, para diversos motivos. Disponibilizando qualidade, profissionalismo e custo benefício em seus projetos.</h3>
+                                        <!-- <p>Abaixo está o link que Levará a essa pequena empresa no Google Maps.</p>
+                                        <a href="https://g.co/kgs/89y6vCk" target="_blank" class="btn btn-orange withradius secbtn withicon">https://g.co/kgs/89y6vCk <i class="fa fa-long-arrow-right"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="text-light mb-0">Nossas Políticas</h3>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <div class="container-xxl py-5" id="services">
+                    <div class="container px-lg-5">
+                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp " data-wow-delay="0.1s">
+                            <h2 class="h2-heading branco">Abaixo o que eu posso fazer para <span id="span-color">você</span>.</h2>
+                            <p class="p-heading branco">Tudo isso em um Design desenvolvido por mim, mas pensado totalmente pelo cliente</p>
                         </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a href="./política de cookies.html" id="p-link">
-                                <p class="p-link" style="color: white;">Política de Cookies</p>
-                            </a>
-                            <a href="./política de privacidade.html" id="p-link">
-                                <p class="p-link" style="color: white;">Política de Privacidade</p>
-                            </a>
+                        <div class="row g-4">
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-google"></i>
+                                    <h3 id="h3-cor">Google Sites</h3>
+                                    <p style="color: black;">Um site que é feito por modelos e elementos prontos, sem precisar programar do zero para fazê-los, mas com a desvantagem de ser mais simples e personalização não muito grande.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="fa-brands fa-wix"></i>
+                                    <h3 id="h3-cor">Wix</h3>
+                                    <p style="color: black;">Um site que é feito por modelos e elementos prontos, sem precisar programar do zero para fazê-los e com uma maior personalização de elementos e customização se comparado com um site feito pelo <span id="span-color">Google Sites</span>, mas haverá custo com a alta customização da marca.</p>
+                                </div>
+                            </div>  <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-wordpress"></i>
+                                    <h3 id="h3-cor">Wordpress</h3>
+                                    <p style="color: black;">Um site muito famoso e usado pelas empresas e que é feito por modelos e elementos prontos, sem precisar programar do zero para fazê-los e com uma maior personalização e flexibilidade de elementos e customização se comparado com um site feito pelo Wix, mas também haverá custo com a alta customização da marca.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-code-square"></i>
+                                    <h3 id="h3-cor">Website</h3>
+                                    <p style="color: black;">Posso fazer um site desde simples até um mais complexo para sua empresa.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-cart"></i>
+                                    <h3 id="h3-cor">Loja online</h3>
+                                    <p style="color: black;">Posso fazer um site de amostras de produtos ou um E-commerce, com preços, promoções, carrinho de compras com cálculo total, localização com mapa GPS interativo do local, clima do local, e muitos outros recursos adicionais.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h3 id="h3-cor">Blog</h3>
+                                    <p style="color: black;">Posso fazer um site pessoal ou blog de notícias para você.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-brush"></i>
+                                    <h3 id="h3-cor">Logo Marca</h3>
+                                    <p style="color: black;">Posso fazer uma logo do seu negócio.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-phone"></i>
+                                    <h3 id="h3-cor">Aplicativos Híbridos</h3>
+                                    <p style="color: black;">Posso fazer um aplicativo híbrido, e sendo disponibilizado para as plataformas: Google Play e Apple Store.</p>
+                                </div>
+                            </div>
+                            <div class="caixa-info col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" onmouseover="moveBox(event)" onmouseleave="resetBox(event)">
+                                <div class="service-item d-flex flex-column justify-content-center text-center rounded 1">
+                                    <i class="bi bi-bug"></i>
+                                    <h3 id="h3-cor">Resolução de Problemas no <span id="span-color">Front-End</span></h3>
+                                    <p style="color: black;">Identificar e corrigir bugs, otimização de desempenho, responsividade UI/UX compatibilidade do navegador, melhoria da acessibilidade, etc.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Footer End -->
-            <!-- Copyright Start -->
-            <div class="container-fluid copyright text-white-50 py-4" id="copyright">
+            </section>
+              <section id="porqueumsite">
+                  <div class="container-xxl py-5">
+                    <div class="container px-lg-5">
+                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp " data-wow-delay="0.1s">
+                            <h2 class="h2-heading branco">Mas, por que ter um site como <span id="span-color">presença digital </span>hoje em dia?</h2>
+                            <p class="p-heading branco textinho">Bom no mundo cada vez mais digital em que vivemos, a presença online se tornou essencial para o sucesso de qualquer negócio. Ter um site bem projetado e funcional não é mais um luxo, mas sim uma necessidade para empresas de todos os tamanhos e setores. Aqui estão algumas razões convincentes pelas quais investir em um site é crucial nos dias de hoje:</p>
+                        </div>
+                            <div>
+                                <h5 class="wow fadeInUp" data-wow-delay="1s"><span id="span-color">Alcance Global</span>: Um site oferece a oportunidade de alcançar um público global 24 horas por dia, 7 dias por semana. Não há fronteiras geográficas, permitindo que sua empresa seja acessada por clientes em qualquer lugar do mundo.</h5>
+                                <h5 class="wow fadeInUp" data-wow-delay="1.5s"><span id="span-color">Credibilidade e Profissionalismo</span>: Um site bem projetado transmite credibilidade e profissionalismo para os clientes em potencial. É uma maneira de estabelecer uma impressão positiva desde o primeiro contato, mostrando que sua empresa está séria e comprometida com a excelência.</h5>
+                                <h5 class="wow fadeInUp" data-wow-delay="2s"><span id="span-color">Informações Acessíveis</span>: Seus clientes podem encontrar facilmente informações sobre seus produtos, serviços, horários de funcionamento, localização e formas de contato através do seu site. Isso proporciona conveniência e transparência, construindo confiança e facilitando o processo de tomada de decisão.</h5>
+                                <h5 class="wow fadeInUp" data-wow-delay="2.5s"><span id="span-color">Marketing Eficiente</span>: Um site serve como uma poderosa ferramenta de marketing, permitindo que você promova seus produtos e serviços de forma eficaz. Você pode utilizar estratégias de SEO (Otimização de Mecanismos de Busca) publicidade online, redes sociais e conteúdo relevante para atrair e engajar seu público-alvo.</h5>
+                                <h5 class="wow fadeInUp" data-wow-delay="2.8s"><span id="span-color">Facilidade de Atualização</span>: Ao contrário de materiais impressos, um site pode ser facilmente atualizado e modificado conforme necessário, sem os custos e inconvenientes associados à impressão. Isso garante que suas informações estejam sempre atualizadas e precisas para seus clientes.</h5>
+                                <h5 class="wow fadeInUp" data-wow-delay="3s"><span id="span-color">Concorrência</span>: Em um mercado competitivo, ter um site pode ser o diferencial entre sua empresa e a concorrência. Seus concorrentes provavelmente já têm presença online, então é essencial que você também esteja presente para não ficar para trás</h5>
+                            </div>
+                        </div>
+                    </div>
+              </section>
+            <section id="porqueeu">
+                <div class="split">
+                    <div class="area-1">
+                        </div><div class="area-2 bg-gray">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="text-container">
+                                            <div class="wow fadeInUp">
+                                                <h2 class="ciano">Por que trabalhar comigo?</h2>
+                                                <p>Não é só a parte do custo benefício que meus projetos têm, mas sim oferecer uma oportunidade para causar um impacto perante ao demais na visibilidade do negócio. Através de soluções personalizadas e estratégias focadas, meu objetivo é proporcionar ao negócio a capacidade de conquistar novos clientes e surpreender aqueles que já são frequentadores, oferecendo uma experiência nova que se tornará diária aos clientes. Tenho confiança que investir em uma presença online hoje em dia, é essencial para se destacar em um mercado competitivo. E quanto mais cedo a empresa investir nesse tipo de Marketing, maior será seu alcance em relação aos concorrentes, que faram quando perceberem que ter uma presença online própria é uma necessidade. Por isso ao confiarem em mim para trabalhar junto, a empresa não está apenas investindo ou ariscando seus bens em um projeto digital, mas sim abrindo portas para um futuro de oportunidades no ramo online e trazendo mais admiração ao cliente.</p>
+                                            </div>
+                                            <div class="wow fadeInUp">
+                                                <h5 class="ciano">Ferramentas a oferecer</h5>
+                                                <p class="branco">"Carrinho de Compras Integrado" com ou sem a função de compras online. <br> "Catálogo Completo de Produtos e Promoções". <br> "Histórico e Recomendação de Produtos". <br> "Localização com GPS Interativo da empresa". <br> "Horários de Funcionamento e Contato da empresa".</p>
+                                            </div>
+                                            <div class="wow fadeInUp">
+                                                <h5 class="ciano">Minhas habilidades</h5>
+                                                <p class="branco">Estou familiarizado e trabalho diariamente com HTML, CSS, JavaScript, e começando com Bootstrap e outros frameworks modernos</p>
+                                            </div>
+                                            <div class="icons-container">
+                                                <img class="wow zoomIn" src="images/details-icon-html.png" alt="alternative">
+                                                <img class="wow zoomIn" src="images/details-icon-css.png" alt="alternative">
+                                                <img class="wow zoomIn" src="images/details-icon-bootstrap.png" alt="alternative">
+                                                <img class="wow zoomIn" src="images/details-icon-javascript.png" alt="alternative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="testimonials" class="section-testimonials">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center text-md-start">
-                            <p class="mb-0" style="color: white;">&copy;<span>Copyright
-                                    <script>
-                                        document.write(new Date().getFullYear())
-                                    </script> <a href="#" style="color: rgb(160, 160, 160);">Luis Filipi W.N</a>. Todos os direitos reservados.</p>
+                        <div class="col-lg-12">
+                            <div class="testimonials-heading wow fadeInUp">
+                                <h2 class="h2-heading white" id="title-dp">Alguns Depoimentos...</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="testimonial-container" class="testimonial-container wow zoomIn" data-wow-delay="1s">
+                                <div class="testimonial active">
+                                    <img src="./images/user2.png" alt="Sandra Regina Oliveira">
+                                    <h5>Sandra Regina Oliveira</h5>
+                                    <p>"Uma solução acessível e de alta qualidade para criar minha loja de amostras. Estou muito satisfeita com os resultados."</p>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="./images/user3.avif" alt="Fabrício Luiz Santos">
+                                    <h5>Fabrício Luiz Santos</h5>
+                                    <p>"Ótima relação custo-benefício. Agora tenho um site profissional sem gastar uma fortuna."</p>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="./images/user1.png" alt="Marcos Antônio Silva">
+                                    <h5>Marcos Antônio Silva</h5>
+                                    <p>"Transformaram minha visão em realidade. O site ficou perfeito!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-12 text-center">
+                            <button class="btn-nav" onclick="prevTestimonial()">&lt; Anterior</button>
+                            <button class="btn-nav" onclick="nextTestimonial()">Próximo &gt;</button>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section  id="perguntas">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <hr class="section-divider">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accordion-1 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 wow fadeInUp">
+                            <h2 class="h2-heading branco">Possíveis dúvidas</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header branco" id="headingOne">
+                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Como posso entrar em contato com você e obter rapidamente um orçamento para meu projeto online?
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Para pessoas que preferem mandar por Email "luisfilipidev@gmail.com" mas também pelo meu Instagram profissional <a href="https://www.instagram.com/luisfilipiwn/" target="_blank">@luisfilipiwn</a> meu  <a href="https://wa.me/5551995542680">WhatsApp</a> e outras redes sociais minhas.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header branco" id="headingSix">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Como funciona o precesso de orçamento dos seus projetos?
+                                        </button>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Quando eu vou abordar um cliente para oferecer uma proposta, eu antes faço uma pesquisa sobre o negócio e chego numa talvez conclusão de preço sobre o orçamento, mas quando é o próprio cliente que me chama, nós chegamos a um consenso e conclusão sobre o preço do pagamento.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header branco" id="headingTwo">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Como você cria os desings?
+                                        </button>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Busco as referências que o cliente me ofereceu, os detalhes e fazendo tudo por apenas linhas de códigos.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header branco" id="headingThree">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Receberei alguma manutenção ou contato após a entrega do projeto?
+                                        </button>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Claro que sim, sempre vou manter contato do cliente, não importe o tempo que já estamos juntos.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header ciano" id="headingFour">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            O que acontece após cancelar o pagamento do Site ou App?
+                                        </button>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Não acontecera mais o plano de pagamento por mês e o Site ou Aplicativo será retirado.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header ciano" id="headingFive">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Quais os método de pagamento?
+                                        </button>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                        <div class="card-body branco">
+                                            Apenas por PIX ou PayPal.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div id="contact" class="form-1 bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Contact details</h2>
+                            <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="contactForm" action="enviar_email.php" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cname" name="nome" required>
+                                    <label class="label-control" for="cname">Nome</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-input" id="cemail" name="email" required>
+                                    <label class="label-control" for="cemail">E-mail</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control-textarea" id="cmessage" name="mensagem" required></textarea>
+                                    <label class="label-control" for="cmessage">Mensagem</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <article id="news">
+                <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container py-5">
+                        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                            <h5 class="fw-bold text-uppercase" id="color-tit">Informações recomendadas para você</h5>
+                            <h1 class="mb-0">Com o meu mais recente mini Blog</h1>
+                        </div>
+                        <div class="row g-5">
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                                <div class="blog-item bg-light rounded overflow-hidden">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="./images/codewall.avif" alt="">
+                                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Luis Filipi W.N</small>
+                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>16, Abril 2024</small>
+                                        </div>
+                                        <h4 class="mb-3">Como Construir uma Presença Digital para seu Negócio com Ajuda da Internet?</h4>
+                                        <p>No mundo atual, ter uma presença digital forte é essencial para o sucesso de qualquer negócio. Com o poder... Nesta matéria, vamos explorar algumas estratégias simples e eficazes para ajudá-lo a construir uma presença digital robusta para o seu negócio, aproveitando ao máximo o potencial da internet.</p>
+                                        <a class="text-uppercase" href="noticia.html">LÊ matéria <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                                <div class="blog-item bg-light rounded overflow-hidden">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="./images/codewall.avif" alt="">
+                                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Luis Filipi W.N</small>
+                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>15, Janeiro 2045</small>
+                                        </div>
+                                        <h4 class="mb-3">How to build a website</h4>
+                                        <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                                        <a class="text-uppercase" href="">Mais Informações sobre <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                                <div class="blog-item bg-light rounded overflow-hidden">
+                                    <div class="blog-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="./images/codewall.avif" alt="">
+                                        <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="d-flex mb-3">
+                                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Luis Filipi W.N</small>
+                                            <small><i class="far fa-calendar-alt text-primary me-2"></i>15, Janeiro 2045</small>
+                                        </div>
+                                        <h4 class="mb-3">How to build a website</h4>
+                                        <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                                        <a class="text-uppercase" href="">Mais Informações sobre <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section>
+                <div class="wrapper" id="cookie-banner">
+                    <header>
+                        <i class="fas fa-cookie"></i>
+                        <h2>Utilizamos cookies</h2>
+                    </header>
+                    <div class="data">
+                        <p>Para garantir a melhor experiência em nosso site. Ao continuar navegando, você concorda com o uso de cookies conforme descrito em nossa <a href="./Cookies.html">Política de Cookies</a>.</p>
+                    </div>
+                    <div class="buttons">
+                        <button id="acceptBtn" class="button" onclick="acceptCookies()">Aceitar</button>
+                        <button id="declineBtn" class="button" onclick="rejectCookies()">Rejeitar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer footer-2 bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="social-container">
+                                <span class="fa-stack wow fadeInUp">
+                                    <a href="https://www.facebook.com/profile.php?id=100081163277933" target="_blank">
+                                        <i class="bi bi-facebook fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack wow zoomIn">
+                                    <a href="https://github.com/luisfilipi4" target="_blank">
+                                        <i class="bi bi-github fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack wow zoomIn">
+                                    <a href="https://www.linkedin.com/in/luis-filipi-wolter-nascente-9283022b3/" target="_blank">
+                                        <i class="bi bi-linkedin fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack wow zoomIn">
+                                    <a href="https://www.instagram.com/dev_sites_apps/" target="_blank">
+                                        <i class="bi bi-instagram fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack wow fadeInUp">
+                                    <a href="https://wa.me/5551995542680" class="whats" target="_blank">
+                                        <i class="bi bi-whatsapp fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="vendors/popper/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/countup/countUp.umd.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="vendors/lodash/lodash.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+            <div class="copyright bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12" id="contatos">
+                            <a href="./Cookies.html" id="p-link"><p class="p-small">Política de Cookies</p></a>
+                            <a href="./Política de Privacidade.html" id="p-link"><p class="p-small">Política de Privacidade</p></a>
+                            <p class="p-small">luisfilipidev@gmail.com</p>
+                            <span>Copyright &copy;<script>
+                                document.write(new Date().getFullYear())
+                              </script>
+                                Luis Filipi W.N
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery.easing.min.js"></script> 
+    <script src="plugins/shuffle/shuffle.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/scripts.js"></script> 
     <script src="https://kit.fontawesome.com/6c999c6add.js" crossorigin="anonymous"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+<script>
+function esconderPreload() {
+    const preloadContainer = document.getElementById('preload-container');
+    const siteContent = document.getElementById('site-content');
+    preloadContainer.classList.add('preload-hidden');
+    siteContent.classList.remove('preload-hidden');
+
+    document.body.style.overflow = 'auto';
+}
+
+// Calcular o tempo de exibição do preload com base no tempo de carregamento da página
+window.addEventListener('load', () => {
+    const tempoInicio = performance.now();
+
+    // Função para verificar o tempo decorrido e chamar esconderPreload()
+    function verificarTempoDecorrido() {
+        const tempoAtual = performance.now();
+        const tempoDecorrido = tempoAtual - tempoInicio;
+
+        // Esconde o preload após um determinado tempo (por exemplo, 2000ms)
+        if (tempoDecorrido >= 500) { // Ajuste o tempo limite conforme necessário
+            esconderPreload();
+        } else {
+            // Verifica novamente em breve se o tempo decorrido ainda não atingiu o limite
+            requestAnimationFrame(verificarTempoDecorrido);
+        }
+    }
+
+    // Inicia o processo de verificação do tempo decorrido
+    verificarTempoDecorrido();
+});
+
+    // Verifica se o usuário consentiu com os cookies
+    function checkConsent() {
+        return localStorage.getItem('cookieConsent') === 'accepted';
+    }
+
+    // Define o cookie de consentimento
+    function setCookieConsent(consent) {
+        localStorage.setItem('cookieConsent', consent);
+    }
+
+    // Mostra o banner de cookies apenas se não houver consentimento prévio
+    function showCookieBanner() {
+        if (!checkConsent()) {
+            document.getElementById("cookie-banner").classList.add("show");
+        }
+    }
+
+    // Aceita os cookies
+    function acceptCookies() {
+        setCookieConsent('accepted');
+        hideCookieBanner();
+        // Aqui você pode adicionar lógica adicional para configurar outros cookies de preferência
+    }
+
+    // Rejeita os cookies
+    function rejectCookies() {
+        setCookieConsent('rejected');
+        hideCookieBanner();
+        // Aqui você pode adicionar lógica para não configurar cookies ou para limpar os existentes
+    }
+
+    // Esconde o banner de cookies
+    function hideCookieBanner() {
+        document.getElementById("cookie-banner").classList.remove("show");
+    }
+
+    // Mostra o banner de cookies após um pequeno atraso (simulando carregamento da página)
+    setTimeout(showCookieBanner, 1000); // Ajuste conforme necessário
+
+function moveBox(event) {
+    const box = event.currentTarget;
+    const boxRect = box.getBoundingClientRect();
+    const mouseX = event.clientX - boxRect.left;
+    const mouseY = event.clientY - boxRect.top;
+    const boxCenterX = boxRect.width / 2;
+    const boxCenterY = boxRect.height / 2;
+
+    if (mouseX < boxCenterX && mouseY < boxCenterY) {
+        box.classList.add('move-up');
+    } else if (mouseX < boxCenterX && mouseY > boxCenterY) {
+        box.classList.add('move-left');
+    } else if (mouseX > boxCenterX && mouseY < boxCenterY) {
+        box.classList.add('move-right');
+    } else {
+        box.classList.add('move-down');
+    }
+}
+
+function resetBox(event) {
+    const box = event.currentTarget;
+    box.classList.remove('move-up', 'move-left', 'move-right', 'move-down');
+}
+
+let currentTestimonialIndex = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+
+        function showTestimonial(index) {
+            // Oculta todos os depoimentos
+            testimonials.forEach(testimonial => {
+                testimonial.classList.remove('active');
+            });
+            // Exibe apenas o depoimento com o índice fornecido
+            testimonials[index].classList.add('active');
+        }
+
+        function nextTestimonial() {
+            currentTestimonialIndex++;
+            if (currentTestimonialIndex >= testimonials.length) {
+                currentTestimonialIndex = 0;
+            }
+            showTestimonial(currentTestimonialIndex);
+            resetTimer(); // Reinicia o temporizador após trocar o depoimento
+        }
+
+        function prevTestimonial() {
+            currentTestimonialIndex--;
+            if (currentTestimonialIndex < 0) {
+                currentTestimonialIndex = testimonials.length - 1;
+            }
+            showTestimonial(currentTestimonialIndex);
+            resetTimer(); // Reinicia o temporizador após trocar o depoimento
+        }
+
+        let timer = setInterval(nextTestimonial, 5000); // Troca de depoimento a cada 5 segundos
+
+        function resetTimer() {
+            clearInterval(timer); // Limpa o temporizador atual
+            timer = setInterval(nextTestimonial, 5000); // Inicia um novo temporizador
+        }
+
+        // Mostra o primeiro depoimento ao carregar a página
+        showTestimonial(currentTestimonialIndex);
+
+$(document).ready(function(){
+    new WOW().init();
+        $('.carousel-item').on('slide.bs.carousel', function () {
+      $(this).find('#carousel-caption').show();
+      $(this).find('#carousel-caption [data-animation]').each(function() {
+        var animation = $(this).data('animation');
+        $(this).addClass('animated ' + animation);
+      });
+    });
+
+    $('.carousel-item').on('slid.bs.carousel', function () {
+      $(this).siblings().find('#carousel-caption').hide();
+    });
+  });
+</script>
+</body>
 </html>
